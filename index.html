@@ -59,6 +59,7 @@
             <button class="choice" data-issue="transporte" aria-pressed="false"><span class="emoji">🚌</span><strong>Transporte</strong><small>Ônibus, viagem, serviço</small></button>
             <button class="choice" data-issue="cidade" aria-pressed="false"><span class="emoji">🏙️</span><strong>Problema na cidade</strong><small>Buraco, lixo, iluminação</small></button>
             <button class="choice" data-issue="consumo" aria-pressed="false"><span class="emoji">🛍️</span><strong>Compra ou serviço</strong><small>Empresa, cobrança, contrato</small></button>
+            <button class="choice" data-issue="animais" aria-pressed="false"><span class="emoji">🐾</span><strong>Animais e meio ambiente</strong><small>Resgate, maus-tratos, animais silvestres ou peçonhentos</small></button>
             <button class="choice" data-issue="outro" aria-pressed="false"><span class="emoji">🧭</span><strong>Meu problema é outro</strong><small>Ou não sei por onde começar</small></button>
           </div>
           <div id="triage-panel" class="triage-panel hidden" aria-labelledby="triage-title">
@@ -70,6 +71,13 @@
               <label class="triage-option"><input type="radio" name="triage" value="cobranca"><span><strong>Envolve cobrança, compra, contrato ou prejuízo</strong><small>Ex.: cobraram algo que não reconheço, perdi dinheiro ou uma empresa não cumpriu o combinado.</small></span></label>
               <label class="triage-option"><input type="radio" name="triage" value="sem-solucao"><span><strong>Já procurei ajuda, mas ninguém resolveu</strong><small>Ex.: me mandam de um lugar para outro ou não respondem.</small></span></label>
               <label class="triage-option"><input type="radio" name="triage" value="identificar"><span><strong>Não sei identificar o problema ou ele não aparece aqui</strong><small>Conte com suas palavras. A gente indica por onde começar, sem adivinhar o órgão responsável.</small></span></label>
+            </div>
+            <div class="triage-options hidden" id="animal-options">
+              <label class="triage-option"><input type="radio" name="triage" value="animal-domestico"><span><strong>Animal doméstico abandonado ou em situação de maus-tratos</strong><small>Cão, gato ou outro animal que precisa de proteção ou denúncia.</small></span></label>
+              <label class="triage-option"><input type="radio" name="triage" value="animal-silvestre"><span><strong>Encontrei um animal silvestre</strong><small>Ex.: saruê, morcego, ave, macaco ou outro animal selvagem na cidade.</small></span></label>
+              <label class="triage-option"><input type="radio" name="triage" value="animal-perigoso"><span><strong>Animal peçonhento ou que oferece risco por perto</strong><small>Ex.: cobra, escorpião, aranha, enxame de abelhas.</small></span></label>
+              <label class="triage-option"><input type="radio" name="triage" value="animal-acidente"><span><strong>Fui mordido, picado ou tive contato com animal</strong><small>Prioridade: orientação e atendimento de saúde, especialmente se houver suspeita de animal peçonhento ou morcego.</small></span></label>
+              <label class="triage-option"><input type="radio" name="triage" value="animal-outro"><span><strong>Outro problema envolvendo animais ou meio ambiente</strong><small>Não sei qual órgão procurar ou a situação não aparece acima.</small></span></label>
             </div>
             <div class="field triage-description"><label for="problem-description">Se quiser, conte o que aconteceu <span style="font-weight:500;color:var(--muted)">(opcional)</span></label><textarea id="problem-description" maxlength="500" rows="3" placeholder="Ex.: estou sem água há dois dias e a rua também está alagada."></textarea><p class="field-help">Não escreva CPF, senha, dados bancários nem seu endereço completo.</p></div>
           </div>
@@ -109,6 +117,7 @@
       <article class="category-card"><span class="emoji">🚌</span><h3>Transporte</h3><p>O caminho varia conforme a linha, a viagem e o ente responsável.</p></article>
       <article class="category-card"><span class="emoji">🏙️</span><h3>Minha cidade</h3><p>Buracos, iluminação, coleta de lixo e manutenção urbana.</p></article>
       <article class="category-card"><span class="emoji">🛍️</span><h3>Consumo</h3><p>Compras, contratos e serviços privados que deram problema.</p></article>
+      <article class="category-card"><span class="emoji">🐾</span><h3>Animais e meio ambiente</h3><p>Saiba por onde começar em casos de abandono, maus-tratos, fauna silvestre e animais peçonhentos.</p></article>
       <article class="category-card"><span class="emoji">🧭</span><h3>Meu problema é outro</h3><p>Conte o que aconteceu e encontre um ponto de partida, mesmo que envolva mais de um serviço.</p></article>
     </div>
   </div>
@@ -133,6 +142,9 @@
       <div class="source-item"><a href="https://www.consumidor.gov.br/" target="_blank" rel="noopener noreferrer">Consumidor.gov.br ↗</a><p>Plataforma pública para reclamações contra empresas participantes.</p></div>
       <div class="source-item"><a href="https://www.gov.br/" target="_blank" rel="noopener noreferrer">Portal Gov.br ↗</a><p>Ponto de partida para localizar serviços e órgãos federais.</p></div>
       <div class="source-item"><a href="https://www.gov.br/ana/pt-br" target="_blank" rel="noopener noreferrer">ANA — Agência Nacional de Águas e Saneamento Básico ↗</a><p>Informações nacionais sobre recursos hídricos e saneamento; reclamações locais podem caber a outros órgãos.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/animais-peconhentos" target="_blank" rel="noopener noreferrer">Ministério da Saúde — animais peçonhentos ↗</a><p>Orientações oficiais para prevenção e atendimento em acidentes com animais peçonhentos.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/r/raiva/raiva/" target="_blank" rel="noopener noreferrer">Ministério da Saúde — raiva e exposição a animais ↗</a><p>O que fazer após mordida, arranhão ou contato com animal potencialmente infectado.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/anvisa/pt-br/assuntos/agrotoxicos/disque-intoxicacao" target="_blank" rel="noopener noreferrer">Anvisa — Disque-Intoxicação ↗</a><p>Orientação toxicológica gratuita pelo 0800 722 6001; não substitui atendimento de emergência.</p></div>
     </div>
     <p class="tiny" style="margin-top:18px">Links oficiais revisados em outubro de 2026. Os canais e procedimentos podem mudar; confira as informações no próprio órgão antes de agir.</p>
   </div>
@@ -150,7 +162,7 @@
   const issueNames = {
     energia:"Energia elétrica", telecom:"Internet ou telefone", saude:"Plano de saúde",
     agua:"Água ou saneamento", transporte:"Transporte", cidade:"Problema na cidade",
-    consumo:"Compra ou serviço", outro:"Outro problema"
+    consumo:"Compra ou serviço", animais:"Animais e meio ambiente", outro:"Outro problema"
   };
   const configs = {
     energia:{
@@ -276,16 +288,21 @@
     btn.addEventListener("click",()=>{
       state.issue=btn.dataset.issue;
       document.querySelectorAll("[data-issue]").forEach(b=>b.setAttribute("aria-pressed",String(b===btn)));
-      $("triage-panel").classList.toggle("hidden", state.issue!=="outro");
+      const needsTriage = state.issue==="outro" || state.issue==="animais";
+      $("triage-panel").classList.toggle("hidden", !needsTriage);
+      $("triage-options").classList.toggle("hidden", state.issue!=="outro");
+      $("animal-options").classList.toggle("hidden", state.issue!=="animais");
+      $("triage-title").textContent = state.issue==="animais" ? "Que situação envolvendo animais aconteceu?" : "Vamos entender melhor o que aconteceu";
+      $("triage-panel").querySelector(".step-intro").textContent = state.issue==="animais" ? "Escolha a opção mais próxima. Se alguém estiver ferido ou em perigo, priorize a segurança e o atendimento de saúde." : "Escolha a situação mais parecida. Não precisa saber o nome do órgão nem usar palavras difíceis.";
       $("err1").classList.add("hidden");
-      if(state.issue!=="outro") { state.triage=null; document.querySelectorAll('input[name="triage"]').forEach(r=>r.checked=false); }
+      if(!needsTriage) { state.triage=null; document.querySelectorAll('input[name="triage"]').forEach(r=>r.checked=false); }
 
     });
   });
   $("next-btn").addEventListener("click",()=>{
     if(state.step===1){
       if(!state.issue){$("err1").classList.remove("hidden");return;}
-      if(state.issue==="outro") {
+      if(state.issue==="outro" || state.issue==="animais") {
         const selected=document.querySelector('input[name="triage"]:checked');
         if(!selected){$("err1").textContent="Escolha a situação que mais se aproxima do seu problema para continuarmos.";$("err1").classList.remove("hidden");return;}
         state.triage=selected.value;
@@ -307,6 +324,17 @@
   function renderResult(){
     let c=configs[state.issue]||configs.outro;
     const triageDescription=$("problem-description").value.trim();
+    if(state.issue==="animais") {
+      const animalResults = {
+        "animal-domestico": {title:"Animal doméstico abandonado ou possível maus-tratos", intro:"Comece pelos canais municipais de proteção animal. Se houver suspeita de crueldade, a denúncia também pode ser feita à polícia. Não se coloque em risco para recolher provas.", steps:["Se for seguro, anote o local aproximado e o que observou. Fotos ou vídeos podem ajudar, mas não invada propriedades nem se aproxime de um animal agressivo.","Procure no site oficial da prefeitura por bem-estar animal, proteção animal ou zoonoses. Explique a situação e pergunte qual equipe recebe pedidos de resgate ou denúncias.","Se suspeitar de maus-tratos, registre a denúncia à Polícia Civil ou à Polícia Militar conforme a urgência e as orientações locais. Informe fatos observados, data e local aproximado.","Peça protocolo ou número de registro e guarde as informações. Se o órgão disser que não atende esse tipo de caso, peça indicação do setor responsável."], note:"Não existe um único serviço municipal igual em todas as cidades. Zoonoses nem sempre faz resgate de animais abandonados; confirme a competência local."},
+        "animal-silvestre": {title:"Animal silvestre encontrado", intro:"Animais silvestres podem se machucar ou reagir por medo. O mais seguro é não tocar nem tentar transportar o animal.", steps:["Mantenha pessoas e animais domésticos afastados sem encurralar o animal.","Procure o setor de meio ambiente da prefeitura, a Polícia Ambiental ou um serviço oficial de resgate de fauna do seu estado.","Informe a espécie se souber, o local aproximado e se o animal parece ferido, preso ou em perigo. Não tente identificá-lo de perto.","Se for morcego, não toque mesmo que pareça morto ou esteja no chão. Se alguém teve contato, procure atendimento de saúde prontamente."], note:"O órgão e o procedimento variam conforme a cidade e o estado. Não leve o animal para casa nem o transporte por conta própria."},
+        "animal-perigoso": {title:"Animal peçonhento ou potencialmente perigoso por perto", intro:"A prioridade é evitar aproximação e impedir que outras pessoas cheguem perto. Não tente capturar ou matar o animal.", steps:["Afaste-se devagar e mantenha crianças e animais domésticos longe da área, sem tentar encurralar o animal.","Se houver risco imediato para pessoas, procure o Corpo de Bombeiros (193) ou o serviço de emergência competente na sua região.","Para retirada ou orientação sem risco imediato, consulte a prefeitura e pergunte pelo serviço de zoonoses, meio ambiente ou controle de animais — a atribuição varia por município.","Se ocorrer picada ou mordida, procure atendimento médico imediatamente e siga as orientações oficiais para acidentes com animais peçonhentos."], note:"Não manipule o animal, não aplique receitas caseiras e não tente transportar o animal para um posto de saúde."},
+        "animal-acidente": {title:"Mordida, picada ou contato com animal: cuide da saúde primeiro", intro:"Não espere uma denúncia ou o resgate para buscar orientação de saúde. A urgência depende do animal, do local da lesão e dos sintomas.", steps:["Se houver falta de ar, desmaio, inchaço intenso, sangramento importante ou piora rápida, ligue para o SAMU (192) ou vá a um serviço de emergência.","Em ferida por mordida ou arranhão, lave com água corrente e sabão. Procure atendimento de saúde sem demora para avaliar a necessidade de prevenção contra raiva, tétano ou outras medidas.","Se suspeitar de cobra, escorpião, aranha ou outro animal peçonhento, mantenha a pessoa em repouso e procure atendimento imediatamente. Não faça torniquete, não corte a ferida e não tente sugar o veneno.","Se possível, observe o animal à distância para descrevê-lo, mas não tente capturá-lo nem se aproxime para tirar foto.","O Disque-Intoxicação (0800 722 6001) pode orientar sobre exposição tóxica, mas não substitui o atendimento médico de emergência."], note:"Contato com morcego ou animal silvestre deve ser avaliado rapidamente por um serviço de saúde, mesmo que a lesão pareça pequena."},
+        "animal-outro": {title:"Vamos identificar o órgão responsável", intro:"O caminho muda conforme o animal, o risco e o tipo de ajuda necessária.", steps:["Descreva em uma frase o que aconteceu e se há risco imediato para alguém.","Não toque nem tente capturar animais silvestres ou peçonhentos.","Consulte o site oficial da prefeitura e procure meio ambiente, zoonoses ou bem-estar animal, conforme o caso.","Se houver suspeita de maus-tratos, procure também orientação da Polícia Civil ou da Polícia Ambiental.","Guarde protocolos e peça ao órgão que indique o setor responsável caso ele não atenda a ocorrência."], note:"Os serviços variam por localidade; confirme o canal no site oficial da prefeitura ou do órgão estadual."}
+      };
+      const selectedAnimal=animalResults[state.triage] || animalResults["animal-outro"];
+      c={icon:"🐾", title:selectedAnimal.title, intro:selectedAnimal.intro, steps:selectedAnimal.steps, links:configs.animais.links, note:selectedAnimal.note};
+    }
     if(state.issue==="outro") {
       if(state.triage==="publico") c=configs.cidade;
       else if(state.triage==="cobranca") c=configs.consumo;
@@ -353,7 +381,7 @@
       : `<div class="result-help"><strong>Você ainda não tentou resolver? Pode começar por aí.</strong><p>Primeiro fale com a empresa ou com o órgão que presta o serviço. Explique o que aconteceu e peça para registrarem sua solicitação. Depois, guarde o número de protocolo.</p></div>`;
     const urgentText=urgent?`<div class="notice"><strong>Você marcou que existe perigo agora.</strong> Não espere o site ou uma reclamação. Afaste-se do perigo e procure o serviço de emergência adequado. Se alguém estiver passando mal, procure atendimento de saúde imediatamente.</div>`:"";
     const locationNote=`<p><strong>Você informou:</strong> ${escapeHtml(locationText)}. Isso ajuda a procurar o canal local. Em alguns assuntos, o site não consegue confirmar sozinho qual órgão é responsável; por isso, confira a cidade e o nome do órgão antes de enviar dados.</p>`;
-    const triageNote=(state.issue==="outro")?`<div class="result-help"><strong>Como você descreveu o problema</strong><p>${escapeHtml(({hibrido:"O problema envolve mais de um serviço ou situação.",publico:"O problema aconteceu na rua, no bairro ou em um espaço público.",cobranca:"O problema envolve cobrança, compra, contrato ou prejuízo.","sem-solucao":"Você já procurou ajuda e ainda não conseguiu resolver.",identificar:"Você não conseguiu encaixar o problema nas outras opções."})[state.triage]||"Vamos identificar por onde começar.")}</p>${triageDescription?`<p><strong>O que você contou:</strong> ${escapeHtml(triageDescription)}</p>`:""}</div>`:"";
+    const triageNote=(state.issue==="outro" || state.issue==="animais")?`<div class="result-help"><strong>Como você descreveu o problema</strong><p>${escapeHtml(({hibrido:"O problema envolve mais de um serviço ou situação.",publico:"O problema aconteceu na rua, no bairro ou em um espaço público.",cobranca:"O problema envolve cobrança, compra, contrato ou prejuízo.","sem-solucao":"Você já procurou ajuda e ainda não conseguiu resolver.",identificar:"Você não conseguiu encaixar o problema nas outras opções.","animal-domestico":"Animal doméstico abandonado ou suspeita de maus-tratos.","animal-silvestre":"Animal silvestre encontrado.","animal-perigoso":"Animal peçonhento ou potencialmente perigoso por perto.","animal-acidente":"Mordida, picada ou contato com animal.","animal-outro":"Outro problema envolvendo animais ou meio ambiente."})[state.triage]||"Vamos identificar por onde começar.")}</p>${triageDescription?`<p><strong>O que você contou:</strong> ${escapeHtml(triageDescription)}</p>`:""}</div>`:"";
     const simpleSteps=stepsText.map((text,i)=>`<li><div class="plain-step"><strong>Passo ${i+1}</strong><p>${text}</p></div></li>`).join("");
     $("result-content").innerHTML=`
       <div class="result">
@@ -373,7 +401,7 @@
       state.issue=null; state.triage=null;
       document.querySelectorAll("[data-issue]").forEach(b=>b.setAttribute("aria-pressed","false"));
       document.querySelectorAll('input[name="triage"]').forEach(r=>r.checked=false);
-      $("triage-panel").classList.add("hidden"); $("problem-description").value="";
+      $("triage-panel").classList.add("hidden"); $("triage-options").classList.remove("hidden"); $("animal-options").classList.add("hidden"); $("problem-description").value="";
       $("state").value=""; $("city").value=""; $("tried").checked=false; $("urgent").checked=false;
       $("err1").classList.add("hidden"); $("err2").classList.add("hidden");
       showStep(1); $("encontrar").scrollIntoView({behavior:"smooth"});
