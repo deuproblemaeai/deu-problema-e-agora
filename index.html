@@ -85,7 +85,7 @@
               <label class="triage-option"><input type="radio" name="environment-triage" value="ambiente-fauna"><span><strong>Caça, captura ou comércio de animais silvestres</strong><small>Suspeita de tráfico de fauna, captura ou manutenção irregular de animal silvestre.</small></span></label>
               <label class="triage-option"><input type="radio" name="environment-triage" value="ambiente-outro"><span><strong>Outro problema ambiental</strong><small>Não sei como classificar ou a situação não aparece acima.</small></span></label>
             </div>
-            <div class="field triage-description"><label for="problem-description">Se quiser, conte o que aconteceu <span style="font-weight:500;color:var(--muted)">(opcional)</span></label><textarea id="problem-description" maxlength="500" rows="3" placeholder="Ex.: estou sem água há dois dias e a rua também está alagada."></textarea><p class="field-help">Não escreva CPF, senha, dados bancários nem seu endereço completo.</p></div>
+            <div class="field triage-description"><label for="problem-description">Se quiser, conte o que aconteceu <span style="font-weight:500;color:var(--muted)">(opcional)</span></label><textarea id="problem-description" maxlength="500" rows="3" placeholder="Ex.: encontrei entulho na calçada; há fumaça saindo de um terreno; encontrei um animal ferido."></textarea><p class="field-help">Não escreva CPF, senha, dados bancários nem seu endereço completo.</p></div>
           </div>
           <p id="err1" class="error hidden" role="alert">Escolha a opção que mais se aproxima do seu problema para continuar.</p>
         </div>
@@ -95,7 +95,7 @@
             <div class="field"><label for="state">Estado <span aria-hidden="true">*</span></label><select id="state" required aria-describedby="location-help"><option value="">Escolha seu estado</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option></select></div>
             <div class="field"><label for="city">Cidade <span aria-hidden="true">*</span></label><input id="city" maxlength="70" required aria-describedby="location-help" placeholder="Digite o nome da sua cidade"><p class="field-help" id="location-help">Exemplo: Campinas. Não precisa digitar rua, número ou CEP.</p></div>
           </div>
-          <div class="check-row"><input type="checkbox" id="tried"><label for="tried"><strong>Você já falou com a empresa ou com quem presta o serviço?</strong><br><span class="tiny">Marque se já ligou, mandou mensagem ou foi até um atendimento. Se fez isso, procure o número de protocolo. Se ainda não tentou, deixe desmarcado.</span></label></div>
+          <div class="check-row"><input type="checkbox" id="tried"><label for="tried"><strong>Você já procurou o órgão, serviço ou responsável?</strong><br><span class="tiny">Marque se já ligou, mandou mensagem ou foi até um atendimento. Se fez isso, procure o número de protocolo. Se ainda não tentou, deixe desmarcado.</span></label></div>
           <div class="check-row"><input type="checkbox" id="urgent"><label for="urgent"><strong>Alguém está em perigo agora?</strong><br><span class="tiny">Por exemplo: fio elétrico caído, risco de incêndio ou pessoa passando mal. Marque se houver perigo neste momento. Este site não é serviço de emergência.</span></label></div>
           <p id="err2" class="error hidden" role="alert">Para continuar, escolha seu estado e digite o nome da sua cidade.</p>
         </div>
@@ -350,13 +350,28 @@
         "ambiente-outro": {title:"Vamos identificar o órgão ambiental responsável", intro:"Problemas ambientais podem ser de responsabilidade municipal, estadual ou federal, dependendo do local e do que aconteceu.", steps:["Descreva o problema em uma frase e identifique se existe perigo imediato para pessoas, animais ou o ambiente.","Não toque em resíduos, substâncias desconhecidas, animais silvestres ou peçonhentos.","Comece pelo site oficial da prefeitura e procure meio ambiente ou fiscalização ambiental.","Se o problema ocorrer em área protegida, envolver fauna silvestre ou não for atendido pelo município, peça orientação sobre o órgão ambiental estadual ou federal competente.","Registre o protocolo e peça indicação formal do setor responsável caso o primeiro canal não seja o correto."], note:"Este guia não determina automaticamente a competência ambiental local. Confirme com o órgão público e guarde o protocolo."}
       };
       const selectedAnimal=animalResults[state.triage] || animalResults["ambiente-outro"];
-      const localLinks = [
-        ["Buscar órgão oficial da prefeitura — meio ambiente / proteção animal", `LOCAL_PREFEITURA`, "A busca usa sua cidade e estado. Confira se o resultado é o portal oficial antes de enviar dados."],
-        ["Ministério da Saúde — animais peçonhentos", "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/animais-peconhentos", "Orientações oficiais para prevenção e atendimento em acidentes com animais peçonhentos."],
-        ["Ministério da Saúde — raiva e exposição a animais", "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/r/raiva/raiva/", "Orientações sobre mordidas, arranhões e contato com animais potencialmente infectados."],
-        ["Anvisa — Disque-Intoxicação: 0800 722 6001", "https://www.gov.br/anvisa/pt-br/assuntos/agrotoxicos/disque-intoxicacao", "Orientação toxicológica; não substitui atendimento médico de emergência."],
-        ["Buscar Polícia Ambiental / órgão ambiental oficial do estado", `LOCAL_AMBIENTE`, "Confira o site oficial do seu estado e o canal adequado para o caso."]
+      const linksPrefeitura = [
+        ["Encontrar o canal oficial da prefeitura da minha cidade", `LOCAL_PREFEITURA`, "A busca usa sua cidade e estado. Confira se o resultado é o portal oficial antes de enviar dados."]
       ];
+      const linksAmbienteEstadual = [
+        ["Encontrar órgão ambiental / Polícia Ambiental do estado", `LOCAL_AMBIENTE`, "Confira o portal oficial do estado e escolha o canal de denúncia ou fiscalização adequado."],
+        ["IBAMA — canais de atendimento e denúncias ambientais", "https://www.gov.br/ibama/pt-br/canais_atendimento", "Canal federal; nem toda ocorrência local é de competência do IBAMA."]
+      ];
+      const linksAnimais = [
+        ["Encontrar serviço municipal de proteção animal / zoonoses", `LOCAL_PREFEITURA`, "A prefeitura pode informar se o atendimento é feito por proteção animal, zoonoses ou outro setor. Zoonoses nem sempre realiza resgate."],
+        ...linksAmbienteEstadual
+      ];
+      const linksSaudeAnimal = [
+        ["Ministério da Saúde — animais peçonhentos", "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/animais-peconhentos", "Orientações oficiais sobre prevenção e atendimento após picadas ou contato com animais peçonhentos."],
+        ["Ministério da Saúde — raiva e exposição a animais", "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/r/raiva/raiva/", "Orientações sobre mordidas, arranhões e contato com animais que possam transmitir raiva."],
+        ["Anvisa — Disque-Intoxicação: 0800 722 6001", "https://www.gov.br/anvisa/pt-br/assuntos/agrotoxicos/disque-intoxicacao", "Orientação toxicológica; não substitui atendimento médico de emergência."]
+      ];
+      let localLinks;
+      if(state.triage === "animal-acidente") localLinks = [...linksSaudeAnimal, ...linksAnimais];
+      else if(state.triage === "animal-perigoso") localLinks = [...linksAnimais, ...linksSaudeAnimal.slice(0,1)];
+      else if(state.triage === "animal-silvestre" || state.triage === "ambiente-fauna") localLinks = linksAmbienteEstadual.concat(linksPrefeitura);
+      else if(state.triage === "ambiente-lixo" || state.triage === "ambiente-poluicao" || state.triage === "ambiente-queimada" || state.triage === "ambiente-arvore" || state.triage === "ambiente-outro") localLinks = [...linksPrefeitura, ...linksAmbienteEstadual];
+      else localLinks = [...linksAnimais, ...linksAmbienteEstadual];
       c={icon:"🐾", title:selectedAnimal.title, intro:selectedAnimal.intro, steps:selectedAnimal.steps, links:localLinks, note:selectedAnimal.note};
     }
     if(state.issue==="outro") {
@@ -402,9 +417,10 @@
       if(url.includes("google.com/search?q=site%3Agov.br+Procon+")) finalUrl=`https://www.google.com/search?q=${encodeURIComponent('site:gov.br Procon ' + city + ' ' + uf)}`;
       return `<a class="official-link" href="${finalUrl}" target="_blank" rel="noopener noreferrer"><span>${title}<span>${desc||"Abra o canal indicado e siga as instruções da página."}</span></span><b aria-hidden="true">↗</b></a>`;
     }).join("");
+    const isAnimalEnvironment = state.issue === "animais";
     const triedText=tried
-      ? `<div class="result-help"><strong>Você já tentou resolver.</strong><p>Use o protocolo que recebeu. Se não anotou, veja se está em uma mensagem, e-mail ou conta da empresa. Se não encontrar, peça à empresa uma cópia do atendimento anterior.</p></div>`
-      : `<div class="result-help"><strong>Você ainda não tentou resolver? Pode começar por aí.</strong><p>Primeiro fale com a empresa ou com o órgão que presta o serviço. Explique o que aconteceu e peça para registrarem sua solicitação. Depois, guarde o número de protocolo.</p></div>`;
+      ? `<div class="result-help"><strong>Você já procurou ajuda.</strong><p>Guarde o número de protocolo ou registro, a data, o canal usado e a resposta recebida. Se não recebeu número, peça o registro do atendimento. Se o órgão disser que não é responsável, peça o nome do setor correto e, se possível, essa orientação por escrito.</p></div>`
+      : `<div class="result-help"><strong>Se você ainda não fez a solicitação ou denúncia</strong><p>${isAnimalEnvironment ? "Use o canal público indicado abaixo. Relate apenas o que observou, o local aproximado e se existe risco imediato. Não confronte suspeitos, não entre em propriedade privada e não manipule animais ou resíduos." : "Comece pelo canal oficial indicado para seu tipo de problema. Explique o que aconteceu, peça que registrem a solicitação e guarde o número de protocolo."}</p></div>`;
     const urgentText=urgent?`<div class="notice"><strong>Você marcou que existe perigo agora.</strong> Não espere o site ou uma reclamação. Afaste-se do perigo e procure o serviço de emergência adequado. Se alguém estiver passando mal, procure atendimento de saúde imediatamente.</div>`:"";
     const locationNote=`<p><strong>Você informou:</strong> ${escapeHtml(locationText)}. Isso ajuda a procurar o canal local. Em alguns assuntos, o site não consegue confirmar sozinho qual órgão é responsável; por isso, confira a cidade e o nome do órgão antes de enviar dados.</p>`;
     const triageNote=(state.issue==="outro" || state.issue==="animais")?`<div class="result-help"><strong>Como você descreveu o problema</strong><p>${escapeHtml(({hibrido:"O problema envolve mais de um serviço ou situação.",publico:"O problema aconteceu na rua, no bairro ou em um espaço público.",cobranca:"O problema envolve cobrança, compra, contrato ou prejuízo.","sem-solucao":"Você já procurou ajuda e ainda não conseguiu resolver.",identificar:"Você não conseguiu encaixar o problema nas outras opções.","animal-domestico":"Animal doméstico abandonado ou suspeita de maus-tratos.","animal-silvestre":"Animal silvestre encontrado.","animal-perigoso":"Animal peçonhento ou potencialmente perigoso por perto.","animal-acidente":"Mordida, picada ou contato com animal.","animal-outro":"Outro problema envolvendo animais.","ambiente-lixo":"Descarte irregular de lixo, entulho ou resíduos.","ambiente-poluicao":"Suspeita de poluição do ar, da água ou do solo.","ambiente-queimada":"Queimada, fumaça ou incêndio em vegetação.","ambiente-arvore":"Árvore, poda ou corte irregular.","ambiente-fauna":"Suspeita de caça, captura ou comércio ilegal de animais silvestres.","ambiente-outro":"Outro problema ambiental."})[state.triage]||"Vamos identificar por onde começar.")}</p>${triageDescription?`<p><strong>O que você contou:</strong> ${escapeHtml(triageDescription)}</p>`:""}</div>`:"";
