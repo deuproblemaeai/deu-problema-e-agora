@@ -1,0 +1,960 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f35">
+<meta name="description" content="Guia gratuito para ajudar você a encontrar por onde começar quando tem um problema com serviços públicos ou empresas reguladas.">
+<title>Deu problema, e agora? — Guia do cidadão</title>
+<style>
+:root{--green:#173f35;--green2:#24594a;--mint:#dff3e9;--lime:#d8f36a;--ink:#172722;--muted:#5d6e67;--paper:#f7f8f3;--white:#fff;--line:#dfe7e1;--orange:#f6b26b;--shadow:0 18px 50px rgba(23,63,53,.09);--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--green2);text-underline-offset:3px}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #cf8b35;outline-offset:3px}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.topbar{padding:18px 0;background:var(--paper)}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--green);font-weight:850;letter-spacing:-.04em}.brand-mark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:var(--lime);font-size:23px}.brand span:last-child{font-size:17px;line-height:1.1}.nav-link{font-size:14px;font-weight:700;text-decoration:none}.hero{padding:48px 0 58px;background:linear-gradient(135deg,#e5f4e9 0%,#f7f8f3 72%);overflow:hidden;position:relative}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:44px}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #d7e6dc;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--green2)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.45rem,6vw,4.65rem);line-height:.99;letter-spacing:-.065em;max-width:720px;margin:22px 0}.highlight{color:var(--green2);text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:8px;text-underline-offset:2px}.hero p{font-size:18px;max-width:590px;color:#465b51}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;border:0;border-radius:13px;padding:14px 19px;font-weight:800;text-decoration:none;transition:transform .15s,background .15s}.btn:hover{transform:translateY(-1px)}.btn-primary{background:var(--green);color:white}.btn-primary:hover{background:#0d3027}.btn-secondary{background:white;color:var(--green);border:1px solid var(--line)}.hero-art{background:var(--green);border-radius:32px;padding:28px;color:white;box-shadow:var(--shadow);transform:rotate(1.5deg);position:relative}.art-sticker{display:inline-block;background:var(--lime);color:var(--green);padding:8px 12px;border-radius:11px;font-size:13px;font-weight:900;transform:rotate(-3deg)}.art-question{font-size:88px;line-height:1;font-weight:900;letter-spacing:-.08em;margin:22px 0 8px;color:var(--lime)}.art-lines{display:grid;gap:10px;margin-top:25px}.art-line{display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.1);padding:12px 14px;border-radius:13px;font-size:14px}.art-line b{display:grid;place-items:center;background:var(--lime);color:var(--green);border-radius:9px;width:30px;height:30px;flex-shrink:0}.section{padding:64px 0}.section-head{max-width:690px;margin-bottom:26px}.kicker{font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:#557968}.section h2{font-size:clamp(1.8rem,4vw,2.65rem);letter-spacing:-.045em;line-height:1.08;margin:10px 0 12px}.section-head p{color:var(--muted);margin-bottom:0}.finder{background:white;border:1px solid var(--line);border-radius:26px;box-shadow:var(--shadow);overflow:hidden}.finder-top{padding:24px 26px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:15px}.finder-top h3{margin:0;font-size:20px;letter-spacing:-.03em}.step-label{font-size:13px;color:var(--muted);font-weight:750;white-space:nowrap}.progress{height:5px;background:#edf2ee}.progress span{display:block;height:100%;width:33.33%;background:var(--lime);transition:width .2s}.finder-body{padding:28px}.step h3{font-size:25px;letter-spacing:-.04em;margin-bottom:8px}.step-intro{color:var(--muted);margin-bottom:22px}.choice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.choice{border:1px solid var(--line);background:#fff;border-radius:17px;padding:17px;text-align:left;min-height:124px;color:var(--ink);transition:border .15s,background .15s,transform .15s}.choice:hover{border-color:#8db5a0;transform:translateY(-2px)}.choice[aria-pressed="true"]{border:2px solid var(--green2);background:#eff8f1;padding:16px}.choice .emoji{font-size:25px;display:block;margin-bottom:12px}.choice strong{display:block;font-size:15px;line-height:1.25}.choice small{display:block;color:var(--muted);font-size:12px;margin-top:6px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}.field label{display:block;font-weight:800;font-size:14px;margin-bottom:7px}.field select,.field input{width:100%;border:1px solid #cfdcd3;border-radius:12px;padding:13px;background:white;color:var(--ink)}.field-help{font-size:14px;color:var(--muted);margin-top:6px}.field label span{color:#9a3412}.field select:invalid{color:#5d6e67}.check-row{display:flex;align-items:flex-start;gap:11px;margin:20px 0;padding:15px;background:#f4f8f4;border-radius:14px}.check-row input{margin-top:5px;width:18px;height:18px;accent-color:var(--green)}.check-row label{font-size:14px}.finder-actions{display:flex;justify-content:space-between;gap:12px;margin-top:26px}.finder-actions .btn{min-width:120px}.error{color:#9a3412;font-weight:700;margin-top:12px}.result{border:1px solid #cfe2d4;background:#f7fcf7;border-radius:20px;padding:24px}.result-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}.result-icon{display:grid;place-items:center;flex-shrink:0;width:52px;height:52px;background:var(--mint);border-radius:15px;font-size:26px}.result h3{font-size:24px;letter-spacing:-.04em;margin:0 0 5px}.result p{color:#506259}.result h4{margin:24px 0 10px;font-size:16px}.steps-list{padding-left:23px}.steps-list li{padding:8px 0 8px 4px}.plain-step{margin:10px 0;padding:14px;background:#fff;border:1px solid var(--line);border-radius:14px}.plain-step strong{display:block;margin-bottom:5px}.plain-step p{margin:0;color:var(--muted)}.result-help{padding:14px 16px;border-radius:14px;background:#edf6ef;margin:14px 0}.result-help strong{display:block;margin-bottom:5px}.official-link{min-height:70px}.field select,.field input{min-height:52px}.field textarea{width:100%;border:1px solid #cfdcd3;border-radius:12px;padding:13px;background:white;color:var(--ink);font:inherit;resize:vertical}.triage-panel{margin-top:18px;padding:20px;background:#f5faf5;border:1px solid #cfe2d4;border-radius:18px}.triage-panel h3{font-size:21px;margin:0 0 8px}.triage-panel .step-intro{margin-bottom:14px}.triage-options{display:grid;gap:9px}.triage-option{display:flex;align-items:flex-start;gap:11px;padding:13px;background:white;border:1px solid var(--line);border-radius:13px;cursor:pointer}.triage-option:has(input:checked){border:2px solid var(--green2);background:#eff8f1;padding:12px}.triage-option input{margin-top:4px;accent-color:var(--green);width:18px;height:18px;flex-shrink:0}.triage-option strong{display:block;line-height:1.3}.triage-option small{display:block;color:var(--muted);font-size:13px;margin-top:4px}.triage-description{margin-top:15px}.links{display:grid;gap:10px;margin-top:12px}.official-link{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 15px;background:white;border:1px solid var(--line);border-radius:13px;text-decoration:none;font-weight:800}.official-link span{display:block;font-size:12px;font-weight:500;color:var(--muted);margin-top:3px}.official-link b{font-size:20px}.notice{margin-top:18px;padding:14px 16px;background:#fff6e9;border:1px solid #f2d6b4;border-radius:14px;font-size:13px;color:#69451f}.result-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.hidden{display:none!important}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.category-card{background:white;border:1px solid var(--line);border-radius:18px;padding:19px}.category-card .emoji{font-size:25px}.category-card h3{font-size:16px;margin:12px 0 5px}.category-card p{font-size:13px;color:var(--muted);margin:0}.how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.how-card{padding:20px 0;border-top:2px solid var(--green)}.how-num{font-size:13px;color:#658475;font-weight:900}.how-card h3{font-size:19px;letter-spacing:-.03em;margin:10px 0 8px}.how-card p{color:var(--muted);font-size:14px}.sources{background:#e9f3eb}.source-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.source-item{padding:16px;background:rgba(255,255,255,.8);border-radius:15px}.source-item a{font-weight:850}.source-item p{font-size:13px;color:var(--muted);margin:6px 0 0}.footer{padding:30px 0;background:var(--green);color:#e8f2eb}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.footer p{font-size:13px;color:#c4d8cc;max-width:670px;margin:8px 0 0}.footer a{color:var(--lime)}.tiny{font-size:12px;color:var(--muted)}.live{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:800px){.hero-grid{grid-template-columns:1fr;gap:30px}.hero-art{max-width:480px}.choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.category-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:1fr;gap:8px}.source-list{grid-template-columns:1fr}.hero{padding:38px 0 45px}.section{padding:48px 0}.finder-body{padding:20px}.finder-top{padding:20px}.fields{grid-template-columns:1fr}}
+@media(max-width:440px){.wrap{width:min(100% - 24px,1120px)}.nav-link{font-size:12px}.choice-grid{grid-template-columns:1fr 1fr;gap:8px}.choice{padding:13px;min-height:112px}.choice[aria-pressed="true"]{padding:12px}.choice strong{font-size:13px}.choice small{font-size:11px}.art-question{font-size:70px}.finder-actions .btn{min-width:0;flex:1;padding:12px}.footer-inner{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+.access-tools{display:flex;gap:9px;align-items:center;justify-content:flex-end;margin:8px 0 15px}.access-tools button{border:1px solid #24594a;border-radius:10px;background:#fff;color:#173f35;font-weight:800;padding:9px 15px}.follow-up{margin-top:22px;border:1px solid #b9d3c2;border-radius:15px;padding:18px;background:#f7faf7}.follow-up select{width:100%;padding:12px;border-radius:9px;border:1px solid #b9d3c2}.follow-up p{margin-bottom:0}@media print{header,.hero,.finder-actions,.access-tools,.follow-up,.result-actions,footer{display:none!important}body{background:#fff!important}}
+.professional-help{margin-top:24px;border:1px solid #b9d3c2;border-radius:16px;padding:20px;background:#fff}.professional-help h4{margin:0 0 12px;color:#173f35}.professional-help h5{font-size:1rem;margin:16px 0 5px}.professional-help p{margin:6px 0 12px}.professional-help a{font-weight:700;text-decoration:underline}@media print{.professional-help{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Deu problema, e agora? Página inicial"><span class="brand-mark" aria-hidden="true">↗</span><span>Deu problema,<br>e agora?</span></a>
+    <a class="nav-link" href="#como-funciona">Como funciona ↓</a>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">✳ Guia gratuito do cidadão</span>
+      <h1>Deu problema.<br><span class="highlight">E agora?</span></h1>
+      <p>Conta errada, internet que não funciona ou um serviço público que não resolve? Descubra por onde começar e quais canais oficiais podem ajudar.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#encontrar">Encontrar meu caminho <span aria-hidden="true">→</span></a><a class="btn btn-secondary" href="#categorias">Ver tipos de problema</a></div>
+      <p class="tiny" style="margin-top:17px">Um guia prático para encontrar o próximo passo — sem complicação.</p>
+    </div>
+    <div class="hero-art" aria-label="Ilustração com a pergunta e agora?">
+      <span class="art-sticker">MENOS CONFUSÃO, MAIS CAMINHO</span>
+      <div class="art-question">E<br>agora?</div>
+      <div class="art-lines">
+        <div class="art-line"><b>1</b> Entenda por onde começar</div>
+        <div class="art-line"><b>2</b> Encontre o canal correto</div>
+        <div class="art-line"><b>3</b> Guarde seus comprovantes</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="encontrar">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Vamos por partes</span><h2>Conte o que aconteceu.</h2><p>Responda algumas perguntas rápidas. A gente mostra caminhos possíveis e links para fontes oficiais.</p></div>
+    <div class="finder">
+      <div class="finder-top"><h3 id="wizard-title">Encontre o próximo passo</h3><span class="step-label" id="step-label">Etapa 1 de 3</span></div>
+      <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+      <div class="finder-body">
+        <div class="access-tools"><span class="tiny">Tamanho da letra</span><button type="button" id="font-down">A−</button><button type="button" id="font-up">A+</button></div><div id="step1" class="step">
+          <h3>Qual é o tipo de problema?</h3><p class="step-intro">Escolha a opção mais próxima da sua situação.</p>
+          <div class="choice-grid" id="issue-choices">
+            <button class="choice" data-issue="energia" aria-pressed="false"><span class="emoji">💡</span><strong>Energia elétrica</strong><small>Conta, falta de luz, cobrança</small></button>
+            <button class="choice" data-issue="telecom" aria-pressed="false"><span class="emoji">📶</span><strong>Internet ou telefone</strong><small>Operadora, sinal, cobrança</small></button>
+            <button class="choice" data-issue="saude" aria-pressed="false"><span class="emoji">🩺</span><strong>Plano de saúde</strong><small>Negativa, cobertura, atendimento</small></button>
+            <button class="choice" data-issue="agua" aria-pressed="false"><span class="emoji">💧</span><strong>Água ou saneamento</strong><small>Falta d'água, esgoto, conta</small></button>
+            <button class="choice" data-issue="transporte" aria-pressed="false"><span class="emoji">🚌</span><strong>Transporte</strong><small>Ônibus, viagem, serviço</small></button>
+            <button class="choice" data-issue="cidade" aria-pressed="false"><span class="emoji">🏙️</span><strong>Problema na cidade</strong><small>Buraco, lixo, iluminação</small></button>
+            <button class="choice" data-issue="consumo" aria-pressed="false"><span class="emoji">🛍️</span><strong>Compra ou serviço</strong><small>Empresa, cobrança, contrato</small></button>
+            <button class="choice" data-issue="animais" aria-pressed="false"><span class="emoji">🐾</span><strong>Animais e meio ambiente</strong><small>Resgate, maus-tratos, animais silvestres ou peçonhentos</small></button>
+            <button class="choice" data-issue="outro" aria-pressed="false"><span class="emoji">🧭</span><strong>Meu problema é outro</strong><small>Ou não sei por onde começar</small></button>
+          </div>
+          <div id="specific-panel" class="triage-panel hidden"><h3>Qual situação aconteceu?</h3><p class="step-intro">Escolha a opção mais parecida para receber orientações específicas.</p><div id="specific-options" class="triage-options"></div></div><div id="triage-panel" class="triage-panel hidden" aria-labelledby="triage-title">
+            <h3 id="triage-title">Vamos entender melhor o que aconteceu</h3>
+            <p class="step-intro">Escolha a situação mais parecida. Não precisa saber o nome do órgão nem usar palavras difíceis.</p>
+            <div class="triage-options" id="triage-options">
+              <label class="triage-option"><input type="radio" name="other-triage" value="hibrido"><span><strong>Meu problema envolve mais de uma coisa</strong><small>Ex.: falta de água e alagamento; conta errada e serviço interrompido.</small></span></label>
+              <label class="triage-option"><input type="radio" name="other-triage" value="publico"><span><strong>Aconteceu na rua, no bairro ou em um espaço público</strong><small>Ex.: buraco, poste apagado, lixo, vazamento, calçada ou alagamento.</small></span></label>
+              <label class="triage-option"><input type="radio" name="other-triage" value="cobranca"><span><strong>Envolve cobrança, compra, contrato ou prejuízo</strong><small>Ex.: cobraram algo que não reconheço, perdi dinheiro ou uma empresa não cumpriu o combinado.</small></span></label>
+              <label class="triage-option"><input type="radio" name="other-triage" value="sem-solucao"><span><strong>Já procurei ajuda, mas ninguém resolveu</strong><small>Ex.: me mandam de um lugar para outro ou não respondem.</small></span></label>
+              <label class="triage-option"><input type="radio" name="other-triage" value="identificar"><span><strong>Não sei identificar o problema ou ele não aparece aqui</strong><small>Conte com suas palavras. A gente indica por onde começar, sem adivinhar o órgão responsável.</small></span></label>
+            </div>
+            <div class="triage-options hidden" id="animal-options">
+              <label class="triage-option"><input type="radio" name="environment-triage" value="animal-domestico"><span><strong>Animal doméstico abandonado ou em situação de maus-tratos</strong><small>Cão, gato ou outro animal que precisa de proteção ou denúncia.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="animal-silvestre"><span><strong>Encontrei um animal silvestre</strong><small>Ex.: saruê, morcego, ave, macaco ou outro animal selvagem na cidade.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="animal-perigoso"><span><strong>Animal peçonhento ou que oferece risco por perto</strong><small>Ex.: cobra, escorpião, aranha, enxame de abelhas.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="animal-acidente"><span><strong>Fui mordido, picado ou tive contato com animal</strong><small>Prioridade: orientação e atendimento de saúde, especialmente se houver suspeita de animal peçonhento ou morcego.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="animal-outro"><span><strong>Outro problema envolvendo animais</strong><small>Não sei qual órgão procurar ou a situação não aparece acima.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="ambiente-lixo"><span><strong>Lixo jogado irregularmente, descarte ou entulho</strong><small>Terreno com lixo, descarte de resíduos ou poluição causada por descarte irregular.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="ambiente-poluicao"><span><strong>Poluição do ar, da água ou do solo</strong><small>Fumaça, água contaminada, despejo de substâncias ou mau cheiro persistente.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="ambiente-queimada"><span><strong>Queimada, fumaça ou incêndio em vegetação</strong><small>Fogo em terreno, mata ou área com vegetação.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="ambiente-arvore"><span><strong>Árvore, poda ou corte irregular</strong><small>Árvore com risco de queda ou suspeita de corte sem autorização.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="ambiente-fauna"><span><strong>Caça, captura ou comércio de animais silvestres</strong><small>Suspeita de tráfico de fauna, captura ou manutenção irregular de animal silvestre.</small></span></label>
+              <label class="triage-option"><input type="radio" name="environment-triage" value="ambiente-outro"><span><strong>Outro problema ambiental</strong><small>Não sei como classificar ou a situação não aparece acima.</small></span></label>
+            </div>
+            <div id="animal-detail-panel" class="triage-panel hidden"><h3 id="animal-detail-title">Conte mais um detalhe</h3><p class="step-intro">Isso ajuda a indicar o caminho correto. Escolha uma opção.</p><div id="animal-detail-options" class="triage-options"></div></div><div class="field triage-description"><label for="problem-description">Se quiser, conte o que aconteceu <span style="font-weight:500;color:var(--muted)">(opcional)</span></label><textarea id="problem-description" maxlength="500" rows="3" placeholder="Ex.: encontrei entulho na calçada; há fumaça saindo de um terreno; encontrei um animal ferido."></textarea><p class="field-help">Não escreva CPF, senha, dados bancários nem seu endereço completo.</p></div>
+          </div>
+          <p id="err1" class="error hidden" role="alert">Escolha a opção que mais se aproxima do seu problema para continuar.</p>
+        </div>
+        <div id="step2" class="step hidden">
+          <h3>Onde acontece?</h3><p class="step-intro">Informe seu estado e sua cidade. Isso ajuda a encontrar o órgão certo. <strong>Não informe seu endereço completo.</strong></p>
+          <div class="fields">
+            <div class="field"><label for="state">Estado <span aria-hidden="true">*</span></label><select id="state" required aria-describedby="location-help"><option value="">Escolha seu estado</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option><option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option><option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option><option>SE</option><option>TO</option></select></div>
+            <div class="field"><label for="city">Cidade <span aria-hidden="true">*</span></label><input id="city" maxlength="70" required aria-describedby="location-help" placeholder="Digite o nome da sua cidade"><p class="field-help" id="location-help">Exemplo: Campinas. Não precisa digitar rua, número ou CEP.</p></div>
+          </div>
+          <div class="check-row"><input type="checkbox" id="tried"><label for="tried"><strong>Você já procurou o órgão, serviço ou responsável?</strong><br><span class="tiny">Marque se já ligou, mandou mensagem ou foi até um atendimento. Se fez isso, procure o número de protocolo. Se ainda não tentou, deixe desmarcado.</span></label></div>
+          <div class="notice hidden" id="early-danger" role="alert"><strong>Perigo imediato?</strong> Não espere o questionário. Afaste-se do risco e procure o serviço de emergência adequado. SAMU 192 para emergência médica e Bombeiros 193 para incêndio ou resgate urgente.</div><div class="check-row"><input type="checkbox" id="urgent"><label for="urgent"><strong>Alguém está em perigo agora?</strong><br><span class="tiny">Por exemplo: fio elétrico caído, risco de incêndio ou pessoa passando mal. Marque se houver perigo neste momento. Este site não é serviço de emergência.</span></label></div>
+          <p class="field-help">🔒 Privacidade: as respostas do questionário são processadas no seu navegador e não são enviadas pelo site a um banco de dados próprio. Ao abrir links de pesquisa externos, a cidade e o estado podem constar na busca. Não informe nome completo, CPF, telefone, endereço ou dados de outras pessoas. Leia a <a href="privacidade.html">Política de Privacidade</a>.</p>
+          <p id="err2" class="error hidden" role="alert">Para continuar, escolha seu estado e digite o nome da sua cidade.</p>
+        </div>
+        <div id="step3" class="step hidden">
+          <h3>Seu caminho sugerido</h3><p class="step-intro">Use estes passos como ponto de partida. A competência pode variar conforme o serviço e a localidade.</p>
+          <div id="result-content"></div>
+        </div>
+        <div class="finder-actions">
+          <button class="btn btn-secondary hidden" id="back-btn" type="button">← Voltar</button>
+          <span></span><button class="btn btn-primary" id="next-btn" type="button">Continuar →</button>
+        </div>
+        <p class="live" id="announcer" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="categorias" style="padding-top:10px">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Problemas do dia a dia</span><h2>Problemas do dia a dia: vamos encontrar o próximo passo.</h2><p>Um guia prático para entender quem procurar, como pedir ajuda e o que fazer se não resolverem.</p></div>
+    <div class="category-grid">
+      <article class="category-card"><span class="emoji">💡</span><h3>Energia elétrica</h3><p>Conta inesperada, interrupção ou problema com a distribuidora.</p></article>
+      <article class="category-card"><span class="emoji">📶</span><h3>Internet e telefone</h3><p>Falhas, cobrança, cancelamento e atendimento da operadora.</p></article>
+      <article class="category-card"><span class="emoji">🩺</span><h3>Plano de saúde</h3><p>Como documentar o problema e buscar os canais adequados.</p></article>
+      <article class="category-card"><span class="emoji">💧</span><h3>Água e saneamento</h3><p>Identifique prestador e regulador local antes de reclamar.</p></article>
+      <article class="category-card"><span class="emoji">🚌</span><h3>Transporte</h3><p>O caminho varia conforme a linha, a viagem e o ente responsável.</p></article>
+      <article class="category-card"><span class="emoji">🏙️</span><h3>Minha cidade</h3><p>Buracos, iluminação, coleta de lixo e manutenção urbana.</p></article>
+      <article class="category-card"><span class="emoji">🛍️</span><h3>Consumo</h3><p>Compras, contratos e serviços privados que deram problema.</p></article>
+      <article class="category-card"><span class="emoji">🐾</span><h3>Animais e meio ambiente</h3><p>Saiba por onde começar em casos de abandono, maus-tratos, fauna silvestre e animais peçonhentos.</p></article>
+      <article class="category-card"><span class="emoji">🧭</span><h3>Meu problema é outro</h3><p>Conte o que aconteceu e encontre um ponto de partida, mesmo que envolva mais de um serviço.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="como-funciona" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Simples assim</span><h2>Três passos para sair da dúvida.</h2></div>
+    <div class="how-grid">
+      <article class="how-card"><span class="how-num">PASSO 01</span><h3>Identifique o problema</h3><p>Escolha a situação mais parecida com a sua. Se não souber exatamente quem é responsável, não precisa adivinhar.</p></article>
+      <article class="how-card"><span class="how-num">PASSO 02</span><h3>Confira o caminho</h3><p>Veja as etapas recomendadas e abra os canais oficiais para confirmar os procedimentos atualizados.</p></article>
+      <article class="how-card"><span class="how-num">PASSO 03</span><h3>Guarde os registros</h3><p>Salve protocolos, faturas, fotos e mensagens. Eles podem ser importantes em um contato posterior.</p></article>
+    </div>
+  </div>
+</section>
+<section class="section sources" id="fontes">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Fontes confiáveis</span><h2>Links oficiais para continuar.</h2><p>O projeto é independente e não substitui os órgãos oficiais. Consulte as páginas abaixo para confirmar regras, canais e procedimentos.</p></div>
+    <div class="source-list">
+      <div class="source-item"><a href="https://www.gov.br/aneel/pt-br/canais_atendimento/reclame-da-distribuidora" target="_blank" rel="noopener noreferrer">ANEEL — problemas com energia ↗</a><p>Orientações para procurar a distribuidora, sua ouvidoria e a agência.</p></div>
+      <div class="source-item"><a href="https://apps.anatel.gov.br/AnatelConsumidor/" target="_blank" rel="noopener noreferrer">ANATEL — abrir sistema de reclamação ↗</a><p>Abre o sistema de reclamação da Anatel. Antes, fale com a operadora e com a ouvidoria dela.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/ans/pt-br/canais_atendimento/canais-de-atendimento-ao-consumidor-1" target="_blank" rel="noopener noreferrer">ANS — canais de atendimento ↗</a><p>Telefone e atendimento eletrônico para registrar dúvidas ou reclamações.</p></div>
+      <div class="source-item"><a href="https://www.consumidor.gov.br/" target="_blank" rel="noopener noreferrer">Consumidor.gov.br ↗</a><p>Plataforma pública para reclamações contra empresas participantes.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/" target="_blank" rel="noopener noreferrer">Portal Gov.br ↗</a><p>Ponto de partida para localizar serviços e órgãos federais.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/ana/pt-br" target="_blank" rel="noopener noreferrer">ANA — Agência Nacional de Águas e Saneamento Básico ↗</a><p>Informações nacionais sobre recursos hídricos e saneamento; reclamações locais podem caber a outros órgãos.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/animais-peconhentos" target="_blank" rel="noopener noreferrer">Ministério da Saúde — animais peçonhentos ↗</a><p>Orientações oficiais para prevenção e atendimento em acidentes com animais peçonhentos.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/r/raiva/raiva/" target="_blank" rel="noopener noreferrer">Ministério da Saúde — raiva e exposição a animais ↗</a><p>O que fazer após mordida, arranhão ou contato com animal potencialmente infectado.</p></div>
+      <div class="source-item"><a href="https://www.gov.br/anvisa/pt-br/assuntos/agrotoxicos/disque-intoxicacao" target="_blank" rel="noopener noreferrer">Anvisa — Disque-Intoxicação ↗</a><p>Orientação toxicológica gratuita pelo 0800 722 6001; não substitui atendimento de emergência.</p></div>
+    </div>
+    <p class="tiny" style="margin-top:18px">Links oficiais revisados em outubro de 2026. Os canais e procedimentos podem mudar; confira as informações no próprio órgão antes de agir.</p>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div><a class="brand" href="#inicio" style="color:white"><span class="brand-mark">↗</span><span>Deu problema,<br>e agora?</span></a><p>Um projeto independente de orientação cidadã. Informação clara para ajudar você a encontrar o próximo passo.</p></div>
+    <div><strong>Importante</strong><p>Este site não é órgão público, não presta atendimento oficial e não envia reclamações em seu nome. As orientações são gerais e não substituem análise individual ou orientação jurídica profissional.</p><p><a href="privacidade.html">Política de Privacidade e LGPD</a> · <a href="mailto:Linyepadovani27@gmail.com">Contato para privacidade</a></p><p>© <span id="year"></span> Deu problema, e agora?</p></div>
+  </div>
+</footer>
+<script>
+(() => {
+  const state = {issue:null, step:1, triage:null};
+  const specific = {
+    energia:[["sem-luz","Falta de energia"],["conta-alta","Minha conta veio muito mais cara que o normal"],["conta-paga","Estão cobrando uma conta que já paguei"],["conta-desconhecida","Apareceu uma cobrança que não reconheço"],["conta-corte","Cortaram minha luz por uma conta que considero errada"],["conta-outro","Tenho outro problema com a conta de luz"],["risco","Fio caído ou risco elétrico"],["dano","Aparelho danificado"]],
+    telecom:[["sinal","Internet ou celular ficou sem sinal"],["lenta","Internet muito lenta ou cai toda hora"],["cobranca","Conta com valor errado ou serviço que não contratei"],["cancelamento","Não consigo cancelar meu plano"],["portabilidade","Troquei de operadora e deu problema"],["golpe","Recebi cobrança ou mensagem suspeita"]],
+    saude:[["negativa","O plano negou exame, cirurgia ou tratamento"],["demora","Não consigo marcar consulta ou exame"],["reembolso","Paguei atendimento e o plano não reembolsou"],["cobranca","Mensalidade ou reajuste que não entendi"],["cancelamento","Cancelaram meu plano ou dificultam a saída"]],
+    agua:[["falta","Estou sem água"],["vazamento-rua","Há vazamento de água na rua"],["vazamento-casa","Há vazamento dentro do meu imóvel"],["esgoto","Esgoto vazando ou retornando"],["conta","Minha conta de água veio errada ou muito alta"],["qualidade","A água está com cor, cheiro ou gosto estranho"]],
+    transporte:[["municipal","Problema com ônibus dentro da cidade"],["estadual","Problema em ônibus entre cidades do mesmo estado"],["federal","Problema em viagem entre estados"],["atraso","Viagem atrasou ou foi cancelada"],["acessibilidade","Não respeitaram minha necessidade de acessibilidade"],["cobranca","Cobrança ou passagem que considero errada"]],
+    cidade:[["buraco","Buraco, calçada ou rua danificada"],["luz","Rua escura ou poste sem iluminação"],["lixo","Lixo acumulado ou coleta não realizada"],["alagamento","Alagamento ou bueiro entupido"],["arvore","Árvore com risco de cair"],["barulho","Barulho excessivo ou perturbação"],["obra","Obra pública causando problema"]],
+    consumo:[["entrega","Comprei e o produto não chegou"],["defeito","Produto chegou com defeito"],["cobranca","Cobrança que não reconheço"],["contrato","Empresa não cumpriu o que prometeu"],["golpe","Acho que caí em golpe ou fraude"],["arrependimento","Quero desistir de uma compra feita pela internet"]]
+  };
+  const specificSteps = {
+    "energia:sem-luz":["Veja se outras casas também estão sem energia, sem tocar em fios ou instalações.","Procure o telefone ou aplicativo oficial da distribuidora na conta de luz e comunique a falta.","Peça protocolo e prazo; sem solução, procure a ouvidoria e depois a ANEEL."],
+    "energia:conta-alta":[
+      "Pegue a conta que veio alta e uma ou duas contas anteriores. Compare o valor, os dias cobrados e o consumo em kWh (quantidade de energia usada). Veja também se a conta indica leitura feita no medidor ou valor estimado.",
+      "Confira se houve mudança em casa: mais pessoas, chuveiro elétrico, ar-condicionado ou algum aparelho ligado por mais tempo. Se a diferença continuar sem explicação, não tente mexer no medidor nem romper lacres.",
+      "Na conta, encontre o nome e o telefone da empresa de energia. Ligue ou entre no aplicativo oficial e diga: 'Minha conta aumentou muito e quero conferir a leitura e pedir uma revisão da cobrança'. Pergunte como enviar uma foto do medidor, se necessário.",
+      "Peça o número de protocolo (número que comprova o atendimento), anote a data e pergunte quando receberá uma resposta. Guarde a conta e a explicação recebida.",
+      "Se a resposta não resolver, procure a ouvidoria da própria empresa com o protocolo. Se continuar sem solução, use o canal de reclamação da ANEEL indicado abaixo. Antes de decidir deixar de pagar, peça orientação sobre os riscos e as opções para contestar o valor."
+    ],
+    "energia:conta-paga":[
+      "Separe a conta cobrada e o comprovante do pagamento. Confira se o comprovante tem o mesmo código de barras, valor ou identificação da conta e se o pagamento foi concluído.",
+      "Veja a data do pagamento. Se acabou de pagar, pode haver um tempo de processamento. Não pague a mesma conta novamente sem antes confirmar com a empresa.",
+      "Entre em contato pelo telefone ou aplicativo que aparece na conta e diga: 'Esta conta já foi paga, mas continua aparecendo como dívida. Quero que confiram meu pagamento'. Pergunte como enviar o comprovante com segurança.",
+      "Anote o protocolo e peça a confirmação de que o pagamento foi localizado. Se houver aviso de corte, diga isso imediatamente e peça orientação específica para evitar a interrupção.",
+      "Se não corrigirem o registro, procure a ouvidoria da empresa e, depois, a ANEEL. Guarde comprovante, contas, protocolos e mensagens."
+    ],
+    "energia:conta-desconhecida":[
+      "Procure na conta a linha que mostra o valor que você não reconhece. Anote a descrição, o mês e o valor. Não envie fotos com seus dados pessoais a desconhecidos.",
+      "Confira se o valor é consumo de energia, multa, parcelamento, serviço adicional ou cobrança de outro mês. Se não entender a descrição, peça que a empresa explique item por item.",
+      "No canal oficial da empresa, diga: 'Não reconheço esta cobrança. Quero saber de onde ela veio e pedir a revisão'. Se disserem que você contratou algum serviço, peça a comprovação dessa contratação.",
+      "Peça protocolo e resposta por escrito, quando possível. Guarde a conta e qualquer mensagem sobre a cobrança.",
+      "Se a empresa mantiver um valor sem explicar adequadamente, procure a ouvidoria e depois a ANEEL. Se suspeitar de fraude, proteja seus dados e peça orientação também aos canais de defesa do consumidor."
+    ],
+    "energia:conta-corte":[
+      "Se a energia já foi cortada, informe isso logo no primeiro contato. Se alguém depende de equipamento médico elétrico, explique a situação imediatamente e procure atendimento de emergência quando houver risco à saúde.",
+      "Separe a conta discutida, comprovantes de pagamento (se houver), avisos de corte e números de atendimento anteriores. Não tente religar a energia por conta própria.",
+      "Ligue para o atendimento oficial da distribuidora e diga: 'Minha energia foi cortada e estou contestando a cobrança. Quero saber o motivo do corte, verificar os avisos enviados e solicitar a solução e a religação quando cabível'.",
+      "Peça protocolo, explicação da cobrança, informação sobre os procedimentos de religação e o prazo aplicável ao seu caso. Se a conta já estiver paga, informe e envie o comprovante pelo canal oficial.",
+      "Se a empresa não resolver ou você considerar o corte irregular, procure imediatamente a ouvidoria e o canal de reclamação da ANEEL. Se houver urgência ou risco à saúde, não espere apenas uma reclamação pela internet: busque ajuda adequada."
+    ],
+    "energia:conta-outro":[
+      "Pegue a conta e marque o trecho que você não entendeu ou considera errado. Anote em uma frase o que aconteceu.",
+      "Procure o nome e o telefone da distribuidora na própria conta. Use apenas o site, aplicativo ou telefone oficial.",
+      "Explique o problema com suas palavras e peça que a empresa informe o motivo da cobrança e o que pode ser feito para corrigir. Se não entender a resposta, peça que expliquem de outro jeito.",
+      "Anote o número de protocolo, a data e o prazo informado. Guarde a conta e os comprovantes que tiver.",
+      "Se não conseguir resolver no atendimento comum, procure a ouvidoria da distribuidora e, depois, o canal da ANEEL."
+    ],
+    "energia:risco":["Não se aproxime de fios caídos, postes danificados ou faíscas.","Afaste as pessoas e ligue para o atendimento emergencial da distribuidora; em risco imediato, acione a emergência competente.","Não espere uma reclamação online para buscar ajuda."],
+    "energia:dano":["Anote quando ocorreu a falha e quais aparelhos foram danificados.","Solicite ressarcimento por dano elétrico à distribuidora e siga o procedimento oficial.","Guarde protocolo, laudos e resposta; se necessário, procure a ANEEL."],
+    "telecom:sinal":["Anote quando a falha começou e quais serviços foram afetados.","Abra pedido de reparo na operadora e guarde o protocolo.","Sem solução, procure a ouvidoria e depois o Anatel Consumidor."],
+    "telecom:cobranca":["Compare a fatura com o contrato ou a oferta.","Peça correção e justificativa à operadora; guarde o protocolo.","Se não resolver, procure a ouvidoria e depois a Anatel."],
+    "telecom:cancelamento":["Consulte as condições do contrato e eventuais regras de fidelização.","Solicite cancelamento no canal oficial e guarde o comprovante.","Se houver cobrança contestada ou recusa, procure a ouvidoria e depois a Anatel."],
+    "saude:negativa":["Se for urgência médica, procure atendimento de saúde imediatamente.","Peça ao plano a justificativa por escrito e guarde o pedido médico e o protocolo.","Registre a reclamação na ANS pelo canal oficial e acompanhe a resposta."],
+    "saude:demora":["Guarde o pedido médico e anote as tentativas de agendamento.","Peça à operadora indicação de atendimento disponível e prazo.","Se o problema continuar, procure a ANS."],
+    "saude:cobranca":["Separe contrato, boletos e comprovantes.","Peça explicação e correção à operadora; anote o protocolo.","Se não resolver, registre demanda na ANS."],
+    "agua:falta":["Confira se a interrupção afeta vizinhos e se houve aviso.","Comunique a falta à prestadora que aparece na conta de água.","Guarde o protocolo e procure a ouvidoria e o regulador local, conforme a cidade."],
+    "agua:vazamento":["Evite contato com esgoto e áreas de risco.","Informe o local à prestadora de água e esgoto e, quando cabível, à prefeitura.","Guarde o protocolo; se houver perigo imediato, acione a emergência competente."],
+    "agua:conta":["Compare faturas e a leitura do hidrômetro sem mexer nos lacres.","Peça revisão à prestadora e guarde o protocolo.","Se não resolver, procure ouvidoria e agência reguladora competente."],
+    "transporte:municipal":["Anote linha, data, horário e o que ocorreu.","Registre a reclamação no canal de transporte da prefeitura.","Guarde o protocolo e procure a ouvidoria municipal se necessário."],
+    "transporte:estadual":["Guarde bilhete, nome da empresa e dados da viagem.","Procure a empresa e identifique o órgão estadual que fiscaliza a linha.","Registre a ocorrência no canal oficial estadual e guarde o protocolo."],
+    "transporte:federal":["Guarde bilhete e informações da viagem entre estados.","Procure primeiro a empresa e anote o protocolo.","Consulte os canais oficiais da ANTT para o serviço sob sua competência."],
+    "cidade:buraco":["Anote a rua e o ponto aproximado; tire foto apenas se for seguro.","Procure manutenção viária ou ouvidoria da prefeitura.","Guarde o protocolo e acompanhe a solicitação."],
+    "cidade:luz":["Anote a localização aproximada do poste, sem tocar em fios.","Procure o canal de iluminação pública da prefeitura; se houver risco elétrico, avise a distribuidora.","Guarde o protocolo e acompanhe o pedido."],
+    "cidade:lixo":["Anote onde está o lixo e quando a coleta falhou.","Procure limpeza urbana ou ouvidoria municipal.","Guarde protocolo; não toque em resíduos perigosos."],
+    "cidade:alagamento":["Não atravesse enxurradas ou áreas com risco elétrico.","Em perigo imediato, acione Defesa Civil ou emergência competente.","Para problema recorrente, procure a prefeitura e registre local, datas e protocolo."],
+    "consumo:entrega":["Separe nota, pedido e prazo combinado.","Peça solução à empresa e guarde o protocolo.","Se não resolver, procure Consumidor.gov.br (se a empresa participar) ou Procon."],
+    "consumo:cobranca":["Guarde fatura, contrato e comprovantes.","Conteste o valor junto à empresa e peça protocolo.","Persistindo, procure Consumidor.gov.br ou Procon."],
+    "consumo:contrato":["Separe contrato, oferta e mensagens.","Peça formalmente a solução à empresa e guarde o protocolo.","Se não resolver, procure Consumidor.gov.br ou Procon."]
+  };
+
+  Object.assign(specificSteps, {
+  "telecom:sinal": [
+    "Verifique se o problema acontece só no seu aparelho ou também em outros aparelhos da casa. Reinicie o equipamento apenas se for seguro; não mexa em cabos danificados.",
+    "Anote o dia e a hora em que ficou sem sinal. Se puder, tire uma foto da mensagem de erro.",
+    "Abra o aplicativo oficial ou telefone para a operadora e diga: “Estou sem internet ou sinal desde [dia e hora]. Preciso que registrem o defeito e informem quando será corrigido.”",
+    "Anote o protocolo, a data e o prazo informado. Pergunte se haverá visita técnica e se existe cobrança por ela.",
+    "Se a operadora não resolver, procure a ouvidoria com o protocolo. Depois, registre reclamação na Anatel Consumidor. Peça análise de eventual abatimento por interrupção, conforme as regras aplicáveis."
+  ],
+  "telecom:lenta": [
+    "Confira qual velocidade foi contratada na fatura ou no aplicativo. Veja se a lentidão ocorre em vários aparelhos e horários.",
+    "Faça testes em horários diferentes; se possível, use conexão por cabo para separar problema de Wi-Fi de problema da rede. Guarde resultados e horários.",
+    "Peça à operadora verificação técnica da velocidade e estabilidade. Informe os testes e solicite prazo para reparo.",
+    "Anote protocolo e orientações. Não aceite troca de plano sem entender novo preço, fidelização e condições.",
+    "Se continuar, procure ouvidoria e Anatel. Guarde contrato, testes e protocolos."
+  ],
+  "telecom:cobranca": [
+    "Separe fatura atual, fatura anterior e contrato ou oferta recebida. Marque o valor que não reconhece.",
+    "Peça à operadora que explique a cobrança por escrito e comprove a contratação de serviços adicionais.",
+    "Diga: “Não reconheço este valor. Quero contestar a cobrança e receber o detalhamento.”",
+    "Guarde protocolo e resposta. Antes de deixar de pagar a fatura inteira, pergunte como pagar apenas a parte não contestada, quando aplicável.",
+    "Sem solução, procure ouvidoria e Anatel; o Procon também pode orientar sobre direitos do consumidor."
+  ],
+  "telecom:cancelamento": [
+    "Encontre o número do contrato e confira se há fidelização ou parcelas pendentes.",
+    "Use um canal oficial da operadora para solicitar cancelamento. Diga claramente: “Quero cancelar o serviço.”",
+    "Peça comprovante do pedido, data efetiva e explicação de qualquer multa ou cobrança final.",
+    "Se houver equipamentos emprestados, pergunte como devolvê-los e guarde comprovante de entrega.",
+    "Se continuarem cobrando ou impedirem o cancelamento, registre na ouvidoria e depois na Anatel."
+  ],
+  "telecom:portabilidade": [
+    "Anote o número que queria manter, operadora antiga e nova, e quando solicitou a mudança.",
+    "Confirme com a nova operadora o andamento do pedido e se falta algum dado.",
+    "Se perdeu o serviço, informe desde quando e peça previsão de normalização.",
+    "Guarde números de protocolo das duas operadoras e mensagens recebidas.",
+    "Se não resolver, procure ouvidoria da operadora responsável e Anatel."
+  ],
+  "telecom:golpe": [
+    "Não clique em links recebidos por mensagem e não informe códigos, senhas ou dados bancários.",
+    "Confira a cobrança apenas no aplicativo oficial ou telefone da operadora, digitando o endereço por conta própria.",
+    "Se forneceu dados ou pagou, contate imediatamente o banco ou meio de pagamento pelos canais oficiais.",
+    "Troque senhas comprometidas e guarde prints e comprovantes sem compartilhar dados sensíveis publicamente.",
+    "Registre ocorrência policial se houver indícios de fraude e procure canais de defesa do consumidor quando houver cobrança de serviço."
+  ],
+  "saude:negativa": [
+    "Se houver risco imediato à vida ou à saúde, procure atendimento de urgência. Não espere uma reclamação na internet.",
+    "Separe pedido médico, relatório com justificativa clínica, carteirinha e contrato, se tiver.",
+    "Peça ao plano o motivo da negativa por escrito, com data e protocolo. Pergunte qual alternativa de atendimento ele oferece.",
+    "Com esses documentos, registre reclamação na ANS e acompanhe o prazo informado.",
+    "Se a situação exigir medida urgente, procure a Defensoria Pública, se elegível, ou advogado com atuação em Direito da Saúde. Não interrompa tratamento sem orientação médica."
+  ],
+  "saude:demora": [
+    "Guarde pedido médico e indicação de prazo clínico, quando houver.",
+    "Anote datas e locais em que tentou marcar, incluindo respostas de clínicas.",
+    "Peça à operadora uma indicação concreta de profissional ou unidade que faça o atendimento na rede, com data disponível.",
+    "Registre protocolo e resposta. Se a operadora não oferecer solução, reclame na ANS.",
+    "Se a espera trouxer risco à saúde, procure orientação médica e assistência jurídica adequada, sem aguardar indefinidamente."
+  ],
+  "saude:reembolso": [
+    "Separe nota fiscal, comprovante de pagamento, pedido médico e regras de reembolso do seu contrato.",
+    "Verifique no aplicativo oficial do plano o procedimento e o prazo para solicitar reembolso.",
+    "Envie os documentos pelo canal oficial e guarde comprovante de envio.",
+    "Se negarem ou pagarem menos, peça cálculo e justificativa por escrito.",
+    "Registre reclamação na ANS e procure orientação jurídica quando necessário."
+  ],
+  "saude:cobranca": [
+    "Compare o boleto atual com os anteriores e confira o tipo de contrato e a data do reajuste.",
+    "Peça à operadora o motivo do aumento e a memória ou explicação do cálculo, quando cabível.",
+    "Guarde boletos, contrato, comunicados e protocolo.",
+    "Não suspenda pagamentos sem avaliar consequências contratuais.",
+    "Se persistir dúvida ou possível irregularidade, procure ANS, Procon e assistência jurídica, conforme o caso."
+  ],
+  "saude:cancelamento": [
+    "Peça à operadora a razão do cancelamento ou a confirmação do seu pedido, por escrito.",
+    "Separe contrato, comprovantes de pagamento e avisos recebidos.",
+    "Se depende de tratamento, informe isso e peça orientação imediata sobre continuidade de atendimento.",
+    "Registre protocolo e reclamação na ANS.",
+    "Para avaliar cancelamento irregular ou risco de interrupção de tratamento, procure Defensoria ou advogado especializado."
+  ],
+  "agua:falta": [
+    "Confira se há aviso da prestadora e se o problema afeta vizinhos.",
+    "Encontre o nome da prestadora na conta de água e use o telefone ou aplicativo oficial.",
+    "Informe endereço aproximado da falta e desde quando está sem abastecimento. Peça previsão de retorno.",
+    "Anote protocolo. Se houver pessoa vulnerável ou necessidade essencial, informe a situação à prestadora.",
+    "Se não resolver, procure a ouvidoria da prestadora e a agência reguladora competente na sua cidade."
+  ],
+  "agua:vazamento-rua": [
+    "Se há água na rua, não entre em buracos ou áreas alagadas; afaste-se de fios elétricos.",
+    "Anote rua, número próximo e ponto de referência, sem se expor ao risco.",
+    "Comunique a prestadora de água pelo canal de vazamentos e peça atendimento.",
+    "Guarde protocolo e informe se o vazamento ameaça casas ou trânsito.",
+    "Se persistir, procure ouvidoria e órgão municipal responsável; em risco estrutural, procure Defesa Civil."
+  ],
+  "agua:vazamento-casa": [
+    "Se for seguro, feche o registro de água para reduzir danos. Não toque em instalações elétricas molhadas.",
+    "Observe se o vazamento ocorre antes ou depois do hidrômetro, sem romper lacres.",
+    "Se for na parte interna, procure encanador qualificado; se parecer ser na rede da prestadora, comunique-a.",
+    "Fotografe danos com segurança e guarde notas de reparo.",
+    "Se houver cobrança excessiva relacionada ao vazamento, pergunte à prestadora sobre procedimento de revisão e documentos exigidos."
+  ],
+  "agua:esgoto": [
+    "Evite contato com água contaminada e mantenha crianças e animais afastados.",
+    "Anote local, horário e se o esgoto está voltando para dentro do imóvel.",
+    "Avise imediatamente a prestadora de saneamento; informe se há risco sanitário.",
+    "Peça protocolo e previsão de equipe. Se houver risco à saúde, procure orientação do serviço de saúde local.",
+    "Sem resposta, procure ouvidoria e vigilância sanitária ou órgão municipal competente, conforme o caso."
+  ],
+  "agua:conta": [
+    "Compare contas recentes e o consumo registrado no hidrômetro, sem mexer nos lacres.",
+    "Verifique se houve vazamento ou mudança de uso. Se suspeitar de vazamento interno, procure técnico.",
+    "Peça revisão da leitura e da cobrança à prestadora.",
+    "Guarde fotos do medidor, contas e protocolo, sem divulgar dados pessoais.",
+    "Se não resolver, procure a ouvidoria e o regulador responsável pelo saneamento na região."
+  ],
+  "agua:qualidade": [
+    "Se a água estiver com aparência, cheiro ou gosto suspeito, evite consumi-la até receber orientação segura da autoridade competente.",
+    "Anote quando o problema começou e se ocorre em outras torneiras ou casas.",
+    "Comunique a prestadora e peça avaliação da qualidade da água.",
+    "Se houver sintomas de doença, procure serviço de saúde.",
+    "Guarde protocolo e informe a vigilância sanitária ou autoridade de saúde local quando necessário."
+  ],
+  "transporte:municipal": [
+    "Anote número da linha, local, data, horário e nome da empresa, se souber.",
+    "Descreva o problema: atraso, falta de ônibus, conduta, acessibilidade ou cobrança.",
+    "Procure o canal de transporte ou ouvidoria da prefeitura da cidade onde ocorreu.",
+    "Peça número de protocolo e guarde passagem ou comprovante, se houver.",
+    "Se não resolver, acompanhe na ouvidoria municipal e verifique o órgão fiscalizador do serviço."
+  ],
+  "transporte:estadual": [
+    "Separe bilhete, linha, trajeto, empresa, data e horário.",
+    "Registre primeiro a reclamação na empresa e peça protocolo.",
+    "Descubra no portal oficial do estado qual agência fiscaliza o transporte intermunicipal; a competência varia conforme o estado.",
+    "Explique o que ocorreu e envie somente documentos solicitados pelo canal oficial.",
+    "Guarde a resposta e procure o regulador estadual se a empresa não solucionar."
+  ],
+  "transporte:federal": [
+    "Guarde bilhete, itinerário, nome da empresa, data e horário.",
+    "Peça à empresa uma explicação e solução por escrito ou com protocolo.",
+    "Se o problema for em transporte rodoviário interestadual regulado pela ANTT, consulte o atendimento oficial da ANTT.",
+    "Informe o número da passagem e o que aconteceu, sem publicar seus documentos em redes sociais.",
+    "Guarde o protocolo e acompanhe a resposta. Para outros meios de transporte, o órgão competente pode ser diferente."
+  ],
+  "transporte:atraso": [
+    "Separe passagem, comprovantes de gastos extras e mensagens sobre o atraso ou cancelamento.",
+    "Confirme com a empresa o motivo e quais alternativas de remarcação ou reembolso estão disponíveis.",
+    "Peça confirmação por escrito do que foi oferecido e do prazo.",
+    "Identifique se o transporte era municipal, intermunicipal ou interestadual, pois muda o órgão fiscalizador.",
+    "Se não resolver, procure o regulador correspondente e, quando couber, Procon ou assistência jurídica."
+  ],
+  "transporte:acessibilidade": [
+    "Registre a data, linha, local e barreira enfrentada sem se colocar em risco.",
+    "Se precisar de ajuda imediata, peça apoio ao responsável pelo serviço ou terminal.",
+    "Formalize a reclamação à empresa e ao órgão fiscalizador, descrevendo o recurso de acessibilidade que faltou.",
+    "Guarde protocolo e documentos que desejar apresentar com segurança.",
+    "Se houver discriminação ou dano, procure também os canais públicos de direitos da pessoa com deficiência e assistência jurídica."
+  ],
+  "transporte:cobranca": [
+    "Separe bilhete, extrato ou comprovante do valor cobrado e a tarifa anunciada.",
+    "Peça à empresa explicação detalhada e correção, se houver erro.",
+    "Anote protocolo e prazo de resposta.",
+    "Identifique se a linha é municipal, estadual ou federal para escolher o fiscalizador correto.",
+    "Sem solução, procure regulador competente ou Procon."
+  ],
+  "cidade:buraco": [
+    "Anote o nome da rua, número próximo e referência do local.",
+    "Se for seguro, tire foto sem entrar na pista ou se aproximar de veículos.",
+    "Abra solicitação no canal de manutenção de vias ou ouvidoria da prefeitura.",
+    "Peça protocolo e guarde a data da solicitação.",
+    "Se houver risco imediato de acidente, avise também o órgão de trânsito ou emergência competente."
+  ],
+  "cidade:luz": [
+    "Anote rua, número aproximado e identificação do poste, se visível sem risco.",
+    "Procure o canal municipal de iluminação pública e informe que a lâmpada está apagada.",
+    "Se houver fio caído ou faíscas, não se aproxime; avise a distribuidora de energia e a emergência.",
+    "Guarde o protocolo da prefeitura.",
+    "Se não houver reparo, acompanhe pela ouvidoria municipal."
+  ],
+  "cidade:lixo": [
+    "Anote endereço aproximado e se é falta de coleta ou descarte irregular.",
+    "Se for seguro, registre imagem do local sem tocar no material.",
+    "Procure limpeza urbana ou fiscalização da prefeitura e descreva a situação.",
+    "Peça protocolo e pergunte quando haverá vistoria ou recolhimento.",
+    "Se houver resíduos perigosos ou risco à saúde, informe isso e procure também o órgão ambiental ou sanitário competente."
+  ],
+  "cidade:alagamento": [
+    "Não atravesse água corrente, ruas inundadas ou áreas próximas de fios elétricos.",
+    "Se houver pessoas em perigo, acione o serviço de emergência ou Defesa Civil local.",
+    "Depois do risco, anote ruas, datas e se há bueiro entupido ou drenagem insuficiente.",
+    "Registre solicitação na prefeitura, em drenagem urbana ou defesa civil, conforme o caso.",
+    "Guarde protocolo e acompanhe; se houver dano no imóvel, registre os prejuízos com segurança."
+  ],
+  "cidade:arvore": [
+    "Se houver risco de queda, mantenha distância e informe a Defesa Civil ou emergência local.",
+    "Anote o local e descreva se há galhos sobre fios, inclinação ou queda iminente.",
+    "Procure o setor municipal de arborização ou meio ambiente.",
+    "Não faça poda ou corte sem verificar regras e autorizações.",
+    "Guarde protocolo e peça vistoria técnica quando cabível."
+  ],
+  "cidade:barulho": [
+    "Anote dias, horários e o tipo de perturbação, sem confrontar ninguém.",
+    "Consulte os canais oficiais de fiscalização de posturas ou perturbação do sossego na sua cidade.",
+    "Se houver ameaça ou violência, priorize a segurança e procure a polícia.",
+    "Registre a ocorrência com fatos objetivos e peça protocolo.",
+    "Se persistir, procure ouvidoria municipal e orientação jurídica quando necessário."
+  ],
+  "cidade:obra": [
+    "Descreva a obra, local, horário e problema causado, sem entrar no canteiro.",
+    "Se houver risco de desabamento ou acidente, afaste-se e acione a Defesa Civil.",
+    "Registre pedido de vistoria ou reclamação no setor de obras da prefeitura.",
+    "Guarde fotos feitas com segurança, protocolo e eventuais danos.",
+    "Se houver problema técnico no imóvel, um engenheiro ou arquiteto habilitado pode avaliar; conflitos jurídicos podem exigir orientação especializada."
+  ],
+  "consumo:entrega": [
+    "Separe número do pedido, comprovante de pagamento e prazo prometido.",
+    "Confira o rastreio apenas no site oficial da loja ou transportadora.",
+    "Entre em contato com a loja e peça entrega ou solução adequada, conforme o caso.",
+    "Guarde mensagens e protocolo, com o prazo informado.",
+    "Se não resolver, procure Consumidor.gov.br (se a empresa participar), Procon ou orientação jurídica."
+  ],
+  "consumo:defeito": [
+    "Guarde nota fiscal, comprovante da compra e fotos do defeito, se seguro.",
+    "Verifique quando recebeu o produto e o que ocorreu, sem tentar reparos perigosos.",
+    "Procure o vendedor ou fornecedor pelo canal oficial e peça solução conforme os direitos aplicáveis.",
+    "Peça comprovante da entrega para análise ou assistência e anote os prazos informados.",
+    "Se não resolver, procure Procon ou Consumidor.gov.br; a solução legal pode depender do tipo de produto e do prazo."
+  ],
+  "consumo:cobranca": [
+    "Separe fatura, comprovantes e contrato, se houver.",
+    "Marque o valor não reconhecido e confirme se há compra ou assinatura vinculada.",
+    "Conteste pelo canal oficial da empresa e peça origem da cobrança e comprovante de contratação.",
+    "Guarde protocolo e resposta. Se envolver cartão ou conta bancária, avise também o banco.",
+    "Se não resolver, procure Procon, Consumidor.gov.br ou assistência jurídica."
+  ],
+  "consumo:contrato": [
+    "Separe contrato, anúncio, orçamento e mensagens com o que foi prometido.",
+    "Anote o que a empresa entregou e o que ficou faltando.",
+    "Solicite formalmente a correção do serviço ou outra solução cabível.",
+    "Guarde protocolo, data e prazo de resposta.",
+    "Se não resolver, procure Procon, Consumidor.gov.br ou orientação jurídica."
+  ],
+  "consumo:golpe": [
+    "Se houve pagamento ou transferência, avise imediatamente o banco pelos canais oficiais e pergunte sobre mecanismos de contestação ou recuperação cabíveis.",
+    "Não forneça senhas ou códigos a supostos atendentes. Troque senhas se houve exposição.",
+    "Guarde comprovantes, anúncios e conversas; não divulgue dados pessoais publicamente.",
+    "Registre ocorrência policial pelos canais oficiais, se cabível.",
+    "Procure Procon ou assistência jurídica quando houver relação de consumo e possível responsabilidade de fornecedor."
+  ],
+  "consumo:arrependimento": [
+    "Confirme se a compra foi feita fora do estabelecimento comercial, como pela internet, e a data do recebimento ou contratação.",
+    "Consulte as regras do direito de arrependimento aplicáveis ao caso; em muitas compras a distância, o prazo legal é de sete dias.",
+    "Solicite a desistência à loja pelo canal oficial e guarde comprovante do pedido.",
+    "Pergunte como devolver o produto e como será feito o reembolso, sem pagar links suspeitos.",
+    "Se houver recusa, procure Procon ou Consumidor.gov.br. Há exceções e particularidades que exigem análise."
+  ]
+});
+
+  const professionalHelp = {
+  "energia": [
+    "Um eletricista qualificado pode verificar a instalação interna quando houver suspeita de defeito ou consumo anormal. Para cobrança, corte ou ressarcimento contestado, um advogado com atuação em Direito do Consumidor pode avaliar seus direitos.",
+    "O Procon pode orientar em conflitos de consumo. A ANEEL recebe reclamações sobre distribuidoras conforme seu procedimento."
+  ],
+  "telecom": [
+    "Um técnico de redes pode avaliar problemas dentro da sua casa; falhas da operadora devem ser tratadas por ela. Para cobranças, cancelamento ou prejuízos, um advogado com atuação em Direito do Consumidor pode avaliar o caso.",
+    "A Anatel recebe reclamações de serviços de telecomunicações; o Procon também pode orientar sobre relações de consumo."
+  ],
+  "saude": [
+    "O profissional de saúde que acompanha você pode explicar a necessidade clínica do atendimento. Um advogado com atuação em Direito da Saúde pode avaliar negativas e conflitos contratuais.",
+    "A ANS recebe reclamações sobre planos de saúde. Para quem atende aos critérios, a Defensoria Pública pode oferecer assistência jurídica gratuita."
+  ],
+  "agua": [
+    "Um encanador qualificado pode identificar e reparar vazamentos dentro do imóvel; um engenheiro pode avaliar danos estruturais. Para cobrança ou conflito jurídico, pode ser útil consultar advogado.",
+    "A prestadora de água, sua ouvidoria e o regulador local são os primeiros caminhos para problemas da rede pública."
+  ],
+  "transporte": [
+    "Para problemas de acessibilidade, um profissional especializado pode orientar sobre adaptações; para prejuízos ou discriminação, um advogado pode avaliar medidas jurídicas.",
+    "O órgão que fiscaliza o transporte varia conforme a linha: prefeitura, regulador estadual ou ANTT. O Procon pode orientar em questões de consumo."
+  ],
+  "cidade": [
+    "Engenheiro ou arquiteto habilitado pode avaliar problemas técnicos de construção, calçadas e estruturas; profissional de manutenção pode ajudar em problemas dentro do imóvel. Para conflitos jurídicos, consulte advogado.",
+    "A prefeitura e a Defesa Civil, em situações de risco, são caminhos públicos importantes."
+  ],
+  "consumo": [
+    "Um contador pode ajudar quando o problema envolve documentos fiscais ou tributos; um técnico pode avaliar defeitos de produtos. Um advogado com atuação em Direito do Consumidor pode avaliar prejuízos e contratos.",
+    "O Procon e o Consumidor.gov.br, quando aplicável, oferecem caminhos de reclamação. A Defensoria pode prestar assistência jurídica gratuita a quem se enquadrar."
+  ],
+  "animais": [
+    "Um médico-veterinário pode atender animais doentes ou feridos. Para situações ambientais ou animais silvestres, procure equipes e órgãos públicos habilitados; não tente captura por conta própria.",
+    "Órgãos municipais de proteção animal, vigilância em saúde e órgãos ambientais podem orientar, conforme o caso."
+  ],
+  "outro": [
+    "Um contador pode auxiliar em questões fiscais; despachante documentalista, em documentos e regularizações; engenheiro ou arquiteto, em questões técnicas de imóveis; advogado, em conflitos jurídicos. A indicação depende do problema específico.",
+    "Procure primeiro o órgão público responsável. Se houver dúvida jurídica e você atender aos critérios, consulte a Defensoria Pública."
+  ]
+};
+  const animalDetailChoices = {"animal-domestico": ["O que aconteceu com o animal?", [["ferido", "Está ferido, doente ou foi atropelado"], ["maus-tratos", "Suspeito de agressão, fome ou falta de cuidados"], ["abandonado", "Foi abandonado ou está perdido"]]], "animal-silvestre": ["Como está o animal silvestre?", [["ferido", "Parece ferido, preso ou não consegue sair"], ["dentro", "Entrou na casa ou está perto de pessoas"], ["morcego", "É um morcego ou houve contato com ele"]]], "animal-perigoso": ["Qual é a situação agora?", [["proximo", "O animal está perto de pessoas neste momento"], ["frequente", "Animais assim aparecem frequentemente no local"], ["picada", "Alguém foi picado, mordido ou passou mal"]]], "animal-acidente": ["O que aconteceu com a pessoa?", [["picada", "Picada de cobra, escorpião ou aranha"], ["mordida", "Mordida ou arranhão de cão, gato ou outro mamífero"], ["morcego", "Contato direto com morcego ou animal silvestre"]]], "animal-outro": ["O que você mais precisa?", [["saude", "Atendimento para animal doente ou ferido"], ["denuncia", "Denunciar uma situação envolvendo animal"], ["orientacao", "Descobrir qual serviço público atende"]]], "ambiente-lixo": ["Que tipo de material foi deixado?", [["comum", "Lixo comum ou entulho de construção"], ["perigoso", "Produto químico, óleo, agulha ou resíduo desconhecido"], ["recorrente", "O descarte acontece repetidamente"]]], "ambiente-poluicao": ["Que tipo de poluição você percebeu?", [["agua", "Água com alteração ou despejo em rio/córrego"], ["ar", "Fumaça, poeira ou mau cheiro"], ["solo", "Líquido, óleo ou substância no terreno"]]], "ambiente-queimada": ["O que está acontecendo agora?", [["ativo", "Há fogo ou fumaça intensa neste momento"], ["apagado", "O fogo acabou, mas quero denunciar"], ["recorrente", "Ocorrem queimadas frequentes no local"]]], "ambiente-arvore": ["Qual é o problema com a árvore?", [["risco", "Parece que pode cair ou atingir fios/casa"], ["poda", "Preciso solicitar poda ou avaliação"], ["corte", "Acho que houve corte ou poda irregular"]]], "ambiente-fauna": ["O que você observou?", [["venda", "Anúncio ou comércio de animal silvestre"], ["cativeiro", "Animal silvestre preso ou mantido em cativeiro"], ["caca", "Caça, armadilha ou captura"]]], "ambiente-outro": ["Qual destas situações é mais parecida?", [["risco", "Há perigo imediato para pessoas ou ambiente"], ["denuncia", "Quero denunciar algo que aconteceu"], ["orientacao", "Não sei quem é responsável"]]]};
+  const animalExtraSteps = {"animal-domestico:ferido": ["Se o animal estiver na rua, evite colocá-lo em risco ou se expor a mordidas. Peça orientação ao serviço municipal de proteção animal sobre resgate; se for seu animal, procure atendimento veterinário.", "Ao pedir ajuda, informe se o animal respira normalmente, se consegue se mover e um ponto de referência do local, sem publicar seu endereço residencial."], "animal-domestico:maus-tratos": ["Descreva fatos observados (por exemplo, ausência de água, ferimentos ou agressão), sem afirmar como certeza algo que não presenciou.", "Para denunciar, informe data e local aproximado à autoridade competente. Não confronte o responsável nem invada o imóvel."], "animal-domestico:abandonado": ["Pergunte à prefeitura se existe setor de bem-estar animal, acolhimento ou orientação sobre animais encontrados. Nem toda cidade oferece recolhimento.", "Se o animal estiver ferido ou agressivo, não tente pegá-lo; informe isso no pedido de ajuda."], "animal-silvestre:ferido": ["Não ofereça comida, água ou remédios e não tente tratar ou transportar o animal.", "Ao contatar o resgate de fauna, diga se o animal está preso, ferido ou exposto a trânsito e informe um ponto de referência."], "animal-silvestre:dentro": ["Afaste crianças e animais domésticos. Não tente encurralar ou espantar com objetos.", "Peça orientação ao serviço oficial de fauna, meio ambiente ou Bombeiros quando houver risco imediato."], "animal-silvestre:morcego": ["Não toque no morcego, mesmo que esteja parado ou pareça morto. Mantenha outras pessoas e animais longe.", "Se houve contato com pele, mordida, arranhão ou contato incerto durante o sono, procure atendimento de saúde prontamente para avaliação de exposição à raiva."], "animal-perigoso:proximo": ["Mantenha distância e isole a área apenas se puder fazê-lo sem se aproximar. Não tente capturar ou matar o animal.", "Se houver risco imediato, ligue para o serviço de emergência competente e descreva a localização."], "animal-perigoso:frequente": ["Anote os locais e horários em que os animais aparecem. Evite manusear entulho e use orientação da vigilância ambiental sobre prevenção.", "Solicite à prefeitura avaliação e orientações de controle adequadas à espécie; não use venenos ou métodos improvisados."], "animal-perigoso:picada": ["Se alguém foi picado ou mordido, interrompa o questionário e procure atendimento médico imediatamente.", "Não faça torniquete, cortes, sucção ou receitas caseiras; não tente capturar o animal para identificação."], "animal-acidente:picada": ["Procure serviço de urgência imediatamente. Se houver falta de ar, desmaio ou piora rápida, ligue para o SAMU 192.", "Não use torniquete, não corte o local, não tente sugar veneno e não aplique substâncias."], "animal-acidente:mordida": ["Lave ferimentos com água corrente e sabão e procure atendimento de saúde sem demora para avaliação de raiva, tétano e cuidados da ferida.", "Informe se conhece o animal e se é possível localizá-lo, mas não tente capturá-lo ou se aproximar novamente."], "animal-acidente:morcego": ["Contato direto com morcego exige avaliação médica pronta, mesmo sem ferimento visível.", "Não capture nem transporte o morcego. Informe ao serviço de saúde como ocorreu o contato."], "animal-outro:saude": ["Se for seu animal, procure médico-veterinário. Se for animal de rua, consulte o serviço municipal sobre acolhimento ou atendimento disponível."], "animal-outro:denuncia": ["Anote o que você viu e onde ocorreu, sem entrar em propriedade particular. Procure órgão ambiental ou policial conforme a ocorrência."], "animal-outro:orientacao": ["Comece pela prefeitura e pergunte qual setor recebe o tipo de ocorrência. Anote o nome do setor indicado."], "ambiente-lixo:comum": ["Registre um ponto de referência e informe se o material bloqueia calçada, bueiro ou rua.", "Peça à limpeza urbana o procedimento para solicitar remoção e fiscalização; guarde o protocolo."], "ambiente-lixo:perigoso": ["Não toque nem abra embalagens. Mantenha crianças e animais longe.", "Informe claramente à prefeitura ou órgão ambiental que há possível resíduo perigoso. Se houver vazamento com risco imediato, acione emergência."], "ambiente-lixo:recorrente": ["Anote datas e horários observados, se for seguro.", "Peça fiscalização do descarte irregular, não apenas retirada do lixo; guarde números de atendimento."], "ambiente-poluicao:agua": ["Evite contato e não use água suspeita para consumo até receber orientação segura.", "Informe se o problema é na água da torneira ou em rio/córrego: os órgãos responsáveis podem ser diferentes."], "ambiente-poluicao:ar": ["Se houver fumaça intensa ou dificuldade para respirar, afaste-se e procure atendimento de saúde quando necessário.", "Anote horários e possíveis fontes sem se aproximar; solicite avaliação à fiscalização ambiental."], "ambiente-poluicao:solo": ["Não toque, cheire de perto nem tente limpar substância desconhecida.", "Descreva se há vazamento ativo, odor forte ou proximidade de pessoas e água; informe isso ao órgão ambiental."], "ambiente-queimada:ativo": ["Não se aproxime do fogo. Em incêndio ativo ou risco de propagação, ligue para Bombeiros 193.", "Informe ponto de referência, direção do fogo e se há pessoas em risco; não espere resposta de formulário online."], "ambiente-queimada:apagado": ["Registre local e data aproximada e procure fiscalização ambiental para relatar possível queimada irregular."], "ambiente-queimada:recorrente": ["Anote os dias e horários em que observou queimadas, sem se expor à fumaça.", "Peça fiscalização ambiental e guarde os protocolos anteriores."], "ambiente-arvore:risco": ["Não permaneça debaixo da árvore nem perto de fios. Se houver risco imediato, acione Defesa Civil ou emergência local.", "Não tente cortar galhos ou mexer em fiação; informe o ponto exato ao serviço competente."], "ambiente-arvore:poda": ["Verifique com a prefeitura se a árvore está em via pública ou terreno particular e qual autorização é necessária.", "Peça vistoria e orientação antes de contratar poda ou corte."], "ambiente-arvore:corte": ["Não confronte quem está cortando. Anote o que observou e o local aproximado, se for seguro.", "Peça à fiscalização ambiental municipal orientação sobre denúncia e autorização exigida."], "ambiente-fauna:venda": ["Não compre nem negocie o animal. Guarde apenas informações públicas do anúncio, sem contato com suspeitos.", "Procure o canal oficial de fiscalização ambiental e informe plataforma, data e link do anúncio."], "ambiente-fauna:cativeiro": ["Não tente retirar o animal nem entre na propriedade.", "Relate o que observou à Polícia Ambiental ou ao órgão ambiental competente."], "ambiente-fauna:caca": ["Não se aproxime de armadilhas ou pessoas armadas e não confronte suspeitos.", "Registre denúncia no canal ambiental ou policial competente, com localização aproximada."], "ambiente-outro:risco": ["Se houver fogo, substância desconhecida ou risco de ferimento, afaste-se e acione o serviço de emergência adequado."], "ambiente-outro:denuncia": ["Anote o fato observado, data e local aproximado. Peça à prefeitura o canal de fiscalização ambiental ou órgão estadual responsável."], "ambiente-outro:orientacao": ["Explique o problema com palavras simples à prefeitura e pergunte qual setor deve recebê-lo. Peça número de atendimento."]};
+  const professionalSpecific = {
+  "energia:conta-alta": "Se suspeitar de defeito dentro do imóvel, eletricista qualificado pode verificar a instalação sem mexer no medidor lacrado. Para cobrança contestada, consulte Procon ou advogado se necessário.",
+  "agua:vazamento-casa": "Encanador qualificado pode localizar e reparar vazamento interno. Se houver rachaduras ou risco estrutural, procure engenheiro civil habilitado.",
+  "cidade:obra": "Engenheiro civil ou arquiteto habilitado pode avaliar danos técnicos. Um advogado pode analisar eventual responsabilidade e reparação.",
+  "consumo:golpe": "Se houve transferência ou pagamento, o banco é o primeiro contato urgente. Para analisar eventual responsabilidade e recuperação de prejuízos, procure orientação jurídica.",
+  "saude:negativa": "O médico assistente pode fornecer relatório clínico; advogado com atuação em Direito da Saúde ou Defensoria Pública, conforme elegibilidade, pode avaliar medidas jurídicas urgentes.",
+  "animais:animal-domestico": "Médico-veterinário pode atender o animal. Para denúncia de maus-tratos, procure proteção animal municipal e autoridades policiais competentes.",
+  "outro:identificar": "Peça ao órgão público que explique qual serviço recebe sua demanda. Não contrate um profissional sem antes identificar qual problema precisa ser resolvido."
+};
+  professionalSpecific["animais:animal-silvestre"] = "Para animal silvestre, procure equipes públicas autorizadas de manejo ou resgate de fauna; veterinário especializado pode avaliar animais apenas dentro das regras aplicáveis. Não contrate captura improvisada.";
+  professionalSpecific["animais:animal-perigoso"] = "Vigilância ambiental, controle de zoonoses ou serviço público competente pode orientar sobre prevenção e retirada. Em risco imediato, priorize a emergência; empresas particulares só devem atuar quando habilitadas e permitidas.";
+  professionalSpecific["animais:animal-acidente"] = "Médico e equipe de saúde são a prioridade para a pessoa ferida. Veterinário atende animais, não substitui atendimento médico humano.";
+  professionalSpecific["animais:animal-outro"] = "Médico-veterinário pode ajudar com saúde animal; equipes públicas de proteção animal, fauna ou vigilância orientam sobre denúncia e resgate conforme a competência.";
+  professionalSpecific["animais:ambiente-lixo"] = "Serviço municipal de limpeza urbana ou fiscalização ambiental é o primeiro caminho. Para descarte particular, empresas de resíduos devidamente licenciadas podem ser necessárias.";
+  professionalSpecific["animais:ambiente-poluicao"] = "Engenheiro ambiental, químico ou outro profissional habilitado pode realizar avaliação técnica quando necessária; fiscalização e identificação de responsabilidades cabem aos órgãos competentes.";
+  professionalSpecific["animais:ambiente-queimada"] = "Bombeiros atendem incêndio ativo. Para prevenção, laudos ou recuperação de áreas, engenheiro florestal ou ambiental habilitado pode auxiliar, conforme o serviço.";
+  professionalSpecific["animais:ambiente-arvore"] = "Engenheiro florestal, agrônomo ou arborista qualificado pode avaliar a árvore conforme as atribuições profissionais; confirme antes as regras municipais e autorizações.";
+  professionalSpecific["animais:ambiente-fauna"] = "Órgãos ambientais e Polícia Ambiental recebem denúncias. Profissionais habilitados em fauna podem atuar quando autorizados; não contrate captura ou transporte irregular.";
+  professionalSpecific["animais:ambiente-outro"] = "Engenheiro ambiental, biólogo, geólogo ou outro profissional habilitado pode avaliar aspectos técnicos, conforme o caso. O órgão ambiental deve indicar a competência pública.";
+  function renderProfessionalHelp(){
+    const general=professionalHelp[state.issue]||professionalHelp.outro;
+    const detailed=professionalSpecific[state.issue+":"+state.triage];
+    const special=detailed ? `<p><strong>Para sua situação:</strong> ${escapeHtml(detailed)}</p>` : "";
+    return `<section class="professional-help" aria-labelledby="professional-help-title">
+      <h4 id="professional-help-title">Precisa de ajuda para continuar?</h4>
+      <p>Você tentou resolver o problema, mas não conseguiu? Dependendo da situação, existem profissionais e serviços que podem ajudar.</p>
+      <h5>Quem pode ajudar?</h5>
+      ${special}<p>${escapeHtml(general[0])}</p>
+      <h5>Também existem serviços públicos</h5><p>${escapeHtml(general[1])}</p>
+      <div class="result-help"><strong>Precisa de assistência jurídica gratuita?</strong><p>A Defensoria Pública pode orientar ou representar pessoas que atendam aos critérios do serviço. Nem todo problema exige advogado.</p>
+      <a href="https://www.defensoria.sp.def.br/" target="_blank" rel="noopener noreferrer">Defensoria Pública de São Paulo — site oficial ↗</a>
+      <p class="tiny">Se você mora em outro estado, procure o site oficial da Defensoria Pública do seu estado. Não oferecemos contratação nem indicamos profissionais patrocinados.</p></div>
+      <p class="tiny">A escolha do profissional depende da situação e da habilitação exigida para cada serviço. Esta é uma orientação geral, não uma indicação comercial.</p>
+    </section>`;
+  }
+  const issueNames = {
+    energia:"Energia elétrica", telecom:"Internet ou telefone", saude:"Plano de saúde",
+    agua:"Água ou saneamento", transporte:"Transporte", cidade:"Problema na cidade",
+    consumo:"Compra ou serviço", animais:"Animais e meio ambiente", outro:"Outro problema"
+  };
+  const configs = {
+    energia:{
+      icon:"💡", title:"Vamos começar pela empresa de energia",
+      intro:"A empresa que manda sua conta de luz é a primeira que deve ouvir o problema. A ANEEL é a agência que acompanha esse serviço, mas normalmente você deve procurar a empresa antes.",
+      steps:[
+        "Pegue uma conta de luz. Procure o nome e o telefone da empresa que aparece nela. Se não tiver a conta, peça ajuda a alguém de confiança para encontrar o telefone oficial da empresa.",
+        "Ligue ou use o atendimento oficial da empresa. Diga com palavras simples o que aconteceu: por exemplo, 'estou sem luz' ou 'minha conta veio muito alta'. Peça que registrem sua reclamação.",
+        "Antes de desligar, pergunte: 'Qual é o número do meu protocolo?'. Protocolo é um número que prova que você entrou em contato. Anote em um papel ou tire uma foto.",
+        "Se a empresa não resolver, procure a ouvidoria dela. Ouvidoria é um canal para reclamar quando o atendimento comum não resolveu. Tenha o primeiro protocolo em mãos.",
+        "Se continuar sem solução, abra o link oficial da ANEEL abaixo e siga a opção para reclamar da distribuidora. Se tiver dificuldade com a internet, ligue para 167."
+      ],
+      links:[["ANEEL — veja como reclamar da empresa de energia","https://www.gov.br/aneel/pt-br/canais_atendimento/reclame-da-distribuidora","Página oficial com os passos e os canais da ANEEL."],["Consumidor.gov.br — verificar a empresa","https://www.consumidor.gov.br/","Use apenas se a empresa aparecer cadastrada na plataforma."]],
+      note:"Se houver fio caído, faísca, poste danificado ou outro perigo, não toque nem se aproxime. Afaste-se e avise a distribuidora ou o serviço de emergência adequado. Não espere uma reclamação pela internet."
+    },
+    telecom:{
+      icon:"📶", title:"Vamos começar pela operadora de telefone ou internet",
+      intro:"A operadora é a empresa que vende seu plano de celular, telefone, internet ou TV. A Anatel orienta procurar primeiro a operadora e depois a ouvidoria dela.",
+      steps:[
+        "Procure o aplicativo, a conta ou o contrato da sua operadora. Se não souber o telefone, use o site ou aplicativo oficial da empresa, ou peça ajuda a alguém de confiança para encontrá-lo.",
+        "Fale com o atendimento e diga o que aconteceu. Exemplo: 'minha internet não funciona desde ontem' ou 'estão me cobrando um valor que não reconheço'. Peça para registrar a reclamação.",
+        "Peça o número do protocolo. Anote esse número, a data e o que a empresa prometeu fazer. Guarde também a conta ou as mensagens relacionadas ao problema.",
+        "Se o atendimento comum não resolver, procure a ouvidoria da operadora. Explique que já tentou resolver e informe o protocolo anterior. Anote o novo protocolo também.",
+        "Se ainda não resolver, toque no botão 'Abrir sistema Anatel Consumidor' abaixo. É o sistema oficial para registrar a reclamação na Anatel. Você precisará entrar ou fazer cadastro. Se não conseguir usar a internet, ligue 1331 em dia útil, das 8h às 20h."
+      ],
+      links:[["Abrir sistema Anatel Consumidor — registrar reclamação","https://apps.anatel.gov.br/AnatelConsumidor/","Sistema oficial da Anatel para entrar e registrar a reclamação."],["Anatel — explicação do passo a passo","https://www.gov.br/anatel/pt-br/consumidor/quer-reclamar/reclamacao","Leia as orientações oficiais antes de registrar. Faça primeiro a reclamação na operadora e na ouvidoria."],["Consumidor.gov.br — verificar a empresa","https://www.consumidor.gov.br/","Outra opção, se a empresa estiver cadastrada."]],
+      note:"A Anatel encaminha a reclamação à operadora. Em geral, a operadora deve responder no sistema em até 10 dias corridos. O site Deu problema, e agora? não recebe nem envia a reclamação por você."
+    },
+    saude:{
+      icon:"🩺", title:"Vamos organizar o problema com o plano de saúde",
+      intro:"Se o plano negou exame, consulta, cirurgia ou cobrou algo que você não entende, comece pedindo uma explicação à operadora. Se houver urgência médica, procure atendimento de saúde sem esperar este guia.",
+      steps:[
+        "Procure o cartão do plano ou a última cobrança para encontrar o telefone oficial da operadora. Diga o que aconteceu e peça uma resposta clara.",
+        "Peça o número do protocolo e anote. Se o plano negou um atendimento, peça que explique o motivo por escrito. Guarde pedido médico, mensagens, e-mails e documentos que já tiver.",
+        "Se não resolver, abra o link 'Canais de atendimento da ANS'. A ANS é a agência que fiscaliza os planos de saúde. Escolha o canal de atendimento ao consumidor.",
+        "Para registrar a reclamação, tenha em mãos o nome do plano, os dados que o sistema pedir e o protocolo da conversa com a operadora. Siga as perguntas da página oficial.",
+        "Depois de registrar, acompanhe a resposta e veja se a ANS pedir que você informe se o problema foi resolvido. Se não conseguir usar a internet, ligue para o Disque ANS: 0800 701 9656, de segunda a sexta, das 8h às 20h."
+      ],
+      links:[["ANS — canais de atendimento ao consumidor","https://www.gov.br/ans/pt-br/canais_atendimento/canais-de-atendimento-ao-consumidor-1","Página oficial com telefone e atendimento eletrônico."],["ANS — registrar reclamação sobre plano de saúde","https://www.ans.gov.br/nip_solicitante/home.xhtml","Sistema eletrônico oficial para registrar e acompanhar a reclamação."],["ANS — como funciona a reclamação","https://www.gov.br/ans/pt-br/assuntos/consumidor/notificacao-de-intermediacao-preliminar-nip","Explicação simples sobre o procedimento da ANS."]],
+      note:"Se alguém estiver passando mal ou precisar de atendimento urgente, não espere resposta do plano ou deste site. Procure um serviço de saúde ou emergência."
+    },
+    agua:{
+      icon:"💧", title:"Vamos descobrir quem cuida da água na sua cidade",
+      intro:"A empresa e o órgão que cuidam da água e do esgoto mudam de uma cidade para outra. Por isso, precisamos da sua cidade e do seu estado para procurar o caminho local. Este guia não consegue confirmar automaticamente qual é a empresa responsável.",
+      steps:[
+        "Se tiver uma conta de água, procure o nome da empresa e o telefone de atendimento. Se não tiver conta, pergunte à prefeitura qual empresa atende seu bairro.",
+        "Ligue para a empresa e explique o problema: falta de água, vazamento, esgoto ou conta errada. Peça que registrem a solicitação.",
+        "Peça o número do protocolo e anote. Se for vazamento ou esgoto, anote também o endereço do local afetado para informar à empresa — não precisa escrever esse endereço neste site.",
+        "Se a empresa não resolver, procure a ouvidoria dela. Depois, pergunte à prefeitura qual agência ou órgão fiscaliza o serviço de água e esgoto da cidade.",
+        "Use o botão de busca abaixo para encontrar o site da prefeitura. Confira o nome da cidade e se o resultado é realmente um site oficial antes de informar seus dados."
+      ],
+      links:[["Buscar o site oficial da prefeitura da minha cidade","https://www.google.com/search?q=site%3Agov.br+prefeitura+","Busca para encontrar o portal municipal. Complete a busca com o nome da sua cidade e confira se o resultado é oficial."],["ANA — Agência Nacional de Águas e Saneamento Básico","https://www.gov.br/ana/pt-br","A ANA tem funções nacionais, mas não é o canal direto de toda reclamação local sobre água."]],
+      note:"O órgão responsável pode ser municipal, estadual ou regional. Não envie reclamação à ANA sem confirmar que ela é responsável pelo assunto específico."
+    },
+    transporte:{
+      icon:"🚌", title:"Vamos identificar quem cuida do transporte",
+      intro:"O órgão certo depende de onde o ônibus ou serviço circula. Uma linha dentro da cidade pode ter um responsável diferente de uma viagem entre estados.",
+      steps:[
+        "Guarde o bilhete, comprovante de pagamento ou número da linha. Anote o dia, o horário, o local e o que aconteceu.",
+        "Fale com a empresa que prestou o serviço. Explique o problema e peça para registrar a reclamação.",
+        "Anote o número do protocolo. Se não derem protocolo, guarde uma foto, e-mail ou mensagem que mostre que você reclamou.",
+        "Se for ônibus de viagem entre estados, consulte a ANTT. Se for ônibus dentro da cidade, procure a prefeitura. Se for transporte entre cidades do mesmo estado, o responsável pode ser estadual ou regional.",
+        "Abra o site oficial do órgão correspondente e procure 'Atendimento', 'Ouvidoria' ou 'Reclamação'. Se não souber qual órgão escolher, peça à prefeitura que informe quem fiscaliza aquela linha."
+      ],
+      links:[["ANTT — Agência Nacional de Transportes Terrestres","https://www.gov.br/antt/pt-br","Para consultar informações sobre serviços de transporte sob responsabilidade federal."],["Buscar o site oficial da prefeitura da minha cidade","https://www.google.com/search?q=site%3Agov.br+prefeitura+","Para transporte municipal; complete a busca com o nome da cidade e confira se o resultado é oficial."]],
+      note:"Não é toda reclamação de ônibus que deve ser feita à ANTT. Confirme se o órgão é responsável pelo tipo de linha e pela viagem."
+    },
+    cidade:{
+      icon:"🏙️", title:"Vamos começar pela prefeitura da sua cidade",
+      intro:"Buraco na rua, lâmpada apagada ou lixo que não foi recolhido geralmente precisam ser comunicados à prefeitura ou ao serviço responsável na cidade.",
+      steps:[
+        "Anote o que está errado e onde fica. Se for seguro, tire uma foto. Não se coloque em perigo para tirar a foto.",
+        "Abra o site oficial da prefeitura da sua cidade. Procure palavras como '156', 'Ouvidoria', 'Solicitações', 'Iluminação pública', 'Limpeza urbana' ou 'Fale conosco'. Nem toda cidade usa o número 156.",
+        "Escolha o serviço que combina com o problema e siga as perguntas da página. Se não souber qual opção escolher, procure o telefone geral da prefeitura e pergunte qual setor recebe esse tipo de pedido.",
+        "Quando enviar o pedido, anote o número de protocolo. Se fizer por telefone, peça para a pessoa repetir o número devagar.",
+        "Se não houver resposta, procure a ouvidoria da prefeitura e informe o protocolo anterior. Se o problema for de uma empresa contratada, pergunte à prefeitura quem fiscaliza o serviço."
+      ],
+      links:[["Buscar o site oficial da prefeitura da minha cidade","https://www.google.com/search?q=site%3Agov.br+prefeitura+","Complete a busca com o nome da sua cidade. Confira se o resultado é o portal oficial da prefeitura."],["Fala.BR — ouvidoria federal","https://falabr.cgu.gov.br/","Use apenas para órgãos e entidades que atendem por esse sistema. Ele não substitui toda ouvidoria municipal."]],
+      note:"O número 156 existe em algumas cidades, mas não em todas. Se o link de busca não ajudar, ligue para o telefone geral da prefeitura e peça orientação."
+    },
+    consumo:{
+      icon:"🛍️", title:"Vamos falar primeiro com a empresa",
+      intro:"Se comprou algo, contratou um serviço ou recebeu uma cobrança errada, comece pedindo que a empresa explique ou corrija o problema.",
+      steps:[
+        "Separe a nota fiscal, o contrato, a conta ou a mensagem que mostra o problema. Se não tiver tudo, procure o que tiver: isso já pode ajudar.",
+        "Entre em contato com o atendimento oficial da empresa. Explique o que aconteceu e diga claramente o que você quer que seja feito, por exemplo: corrigir a cobrança ou consertar o produto.",
+        "Peça o número do protocolo e anote. Guarde também mensagens, e-mails e comprovantes. Não publique CPF, senha, dados bancários ou documentos em redes sociais.",
+        "Veja se a empresa participa do Consumidor.gov.br. Se participar, entre no site e siga as instruções para fazer o cadastro e registrar a reclamação. A plataforma exige uma conta gov.br adequada para esse serviço.",
+        "Se a empresa não estiver na plataforma ou o problema continuar, procure o Procon do seu estado ou cidade. Use o site oficial do governo local para encontrar o canal correto."
+      ],
+      links:[["Consumidor.gov.br — verificar empresa e registrar reclamação","https://www.consumidor.gov.br/","A empresa precisa participar da plataforma. O acesso exige conta gov.br nível prata ou ouro."],["Buscar o Procon oficial da minha cidade ou estado","https://www.google.com/search?q=site%3Agov.br+Procon+","Complete a busca com o nome da sua cidade ou estado e confira se o resultado é oficial."]],
+      note:"O Consumidor.gov.br não atende reclamações contra qualquer empresa: confira se a empresa está cadastrada. Se não estiver, o Procon pode orientar o próximo passo."
+    },
+    outro:{
+      icon:"🧭", title:"Vamos descobrir por onde começar",
+      intro:"Tudo bem se você não souber o nome do órgão. Primeiro vamos identificar quem presta o serviço e o que aconteceu.",
+      steps:[
+        "Diga para si mesmo, em uma frase, o que aconteceu. Exemplo: 'minha conta veio errada', 'não recolheram o lixo' ou 'o plano negou um exame'.",
+        "Procure uma conta, contrato, bilhete ou mensagem que mostre o nome da empresa ou do órgão. Se não tiver, não tem problema: tente lembrar o nome do serviço ou de quem recebeu o pagamento.",
+        "Fale com o atendimento oficial da empresa ou do órgão e explique o problema. Peça que registrem sua solicitação.",
+        "Peça um número de protocolo. Anote o número, a data e a resposta que recebeu. Se não entender, peça para explicarem mais devagar.",
+        "Se não resolver, volte a este guia e escolha a categoria mais parecida com o seu problema. Se envolver compra ou serviço privado, consulte o Consumidor.gov.br ou o Procon."
+      ],
+      links:[["Consumidor.gov.br","https://www.consumidor.gov.br/","Para problemas com empresas participantes da plataforma."],["Buscar o site oficial da prefeitura da minha cidade","https://www.google.com/search?q=site%3Agov.br+prefeitura+","Para problemas de serviço municipal. Complete a busca com a cidade e confira o resultado."],["Fala.BR — ouvidoria federal","https://falabr.cgu.gov.br/","Para manifestações sobre órgãos e entidades que usam esse sistema."]],
+      note:"Se ainda estiver em dúvida, não envie documentos ou dados pessoais para sites que você não conhece. Peça ajuda a alguém de confiança para confirmar se o site é oficial."
+    }
+  };
+  const $ = id => document.getElementById(id);
+  const steps = [ $("step1"), $("step2"), $("step3") ];
+  function showStep(n) {
+    state.step = n;
+    steps.forEach((el,i)=>el.classList.toggle("hidden",i!==n-1));
+    $("step-label").textContent = `Etapa ${n} de 3`;
+    $("progress-bar").style.width = `${n/3*100}%`;
+    $("back-btn").classList.toggle("hidden",n===1);
+    $("next-btn").classList.toggle("hidden",n===3);
+    $("next-btn").textContent = n===2 ? "Ver meu caminho →" : "Continuar →";
+    $("wizard-title").textContent = n===3 ? "Seu caminho sugerido" : "Encontre o próximo passo";
+    $("announcer").textContent = `Etapa ${n} de 3`;
+    if(n===3) renderResult();
+  }
+  document.querySelectorAll("[data-issue]").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      state.issue=btn.dataset.issue;
+      state.triage=null;
+      document.querySelectorAll("[data-issue]").forEach(b=>b.setAttribute("aria-pressed",String(b===btn)));
+      const isOther = state.issue === "outro";
+      const isEnvironment = state.issue === "animais";
+      $("specific-panel").classList.toggle("hidden", !specific[state.issue]);
+      $("specific-options").innerHTML=specific[state.issue] ? specific[state.issue].map(([v,t])=>`<label class="triage-option"><input type="radio" name="specific-triage" value="${v}"><span><strong>${t}</strong></span></label>`).join("") : "";
+      $("triage-panel").classList.toggle("hidden", !(isOther || isEnvironment));
+      $("triage-options").classList.toggle("hidden", !isOther);
+      $("animal-options").classList.toggle("hidden", !isEnvironment);
+      $("animal-detail-panel").classList.add("hidden"); $("animal-detail-options").innerHTML="";
+      $("triage-title").textContent = isEnvironment ? "Animais e meio ambiente: qual situação aconteceu?" : "Vamos entender melhor o que aconteceu";
+      $("triage-panel").querySelector(".step-intro").textContent = isEnvironment
+        ? "Esta categoria tem opções próprias. Escolha a situação mais próxima; não precisa saber o nome do órgão."
+        : "Escolha a situação mais parecida. Não precisa saber o nome do órgão nem usar palavras difíceis.";
+      document.querySelectorAll('input[name="other-triage"], input[name="environment-triage"]').forEach(r=>r.checked=false);
+      $("problem-description").value="";
+      $("err1").classList.add("hidden");
+    });
+  });
+  document.querySelectorAll('input[name="environment-triage"]').forEach(r=>r.addEventListener("change",()=>{
+    const detail=animalDetailChoices[r.value];
+    $("animal-detail-panel").classList.toggle("hidden",!detail);
+    $("animal-detail-title").textContent=detail?detail[0]:"Conte mais um detalhe";
+    $("animal-detail-options").innerHTML=detail?detail[1].map(([value,label])=>`<label class="triage-option"><input type="radio" name="animal-detail" value="${value}"><span><strong>${label}</strong></span></label>`).join(""):"";
+  }));
+  $("next-btn").addEventListener("click",()=>{
+    if(state.step===1){
+      if(!state.issue){$("err1").classList.remove("hidden");return;}
+      if(specific[state.issue]){
+        const choice=document.querySelector('input[name="specific-triage"]:checked');
+        if(!choice){$("err1").textContent="Escolha a situação mais parecida.";$("err1").classList.remove("hidden");return;}
+        state.triage=choice.value;
+      }
+      if(state.issue==="outro" || state.issue==="animais") {
+        const group = state.issue === "animais" ? "environment-triage" : "other-triage";
+        const selected=document.querySelector(`input[name="${group}"]:checked`);
+        if(!selected){$("err1").textContent="Escolha uma opção desta categoria para continuarmos.";$("err1").classList.remove("hidden");return;}
+        state.triage=selected.value;
+        if(state.issue==="animais" && animalDetailChoices[state.triage]){
+          const detail=document.querySelector('input[name="animal-detail"]:checked');
+          if(!detail){$("err1").textContent="Escolha também a opção que explica melhor o que aconteceu.";$("err1").classList.remove("hidden");$("animal-detail-panel").scrollIntoView({behavior:"smooth",block:"center"});return;}
+          state.animalDetail=detail.value;
+        }
+      }
+      showStep(2);
+    } else if(state.step===2){
+      const uf=$("state").value.trim(), city=$("city").value.trim();
+      if(!uf || !city){
+        $("err2").classList.remove("hidden");
+        if(!uf) $("state").focus(); else $("city").focus();
+        return;
+      }
+      $("err2").classList.add("hidden");
+      showStep(3);
+      $("result-content").scrollIntoView({behavior:"smooth",block:"nearest"});
+    }
+  });
+  $("back-btn").addEventListener("click",()=>showStep(state.step-1));
+  function renderResult(){
+    let c=configs[state.issue]||configs.outro;
+    const triageDescription=$("problem-description").value.trim();
+    // Não persistimos nem transmitimos a descrição opcional do visitante.
+
+    const tailored=specificSteps[state.issue+":"+state.triage];
+    if(tailored){
+      const choice=(specific[state.issue]||[]).find(x=>x[0]===state.triage);
+      c={...c,title:choice?choice[1]:c.title,steps:tailored};
+    }
+    const energyBillIntros={
+      "conta-alta":"Sua conta veio mais cara? Vamos conferir se o consumo mudou ou se pode existir um erro na leitura ou na cobrança.",
+      "conta-paga":"Você pagou, mas a empresa ainda está cobrando? Vamos localizar o pagamento e pedir a correção do registro.",
+      "conta-desconhecida":"Apareceu um valor que você não reconhece? Vamos identificar de onde veio antes de pedir a revisão.",
+      "conta-corte":"Sua luz foi cortada por uma conta que você considera errada? A situação precisa de atendimento rápido, especialmente se houver risco à saúde.",
+      "conta-outro":"Mesmo que seu problema não esteja nas opções anteriores, você pode pedir uma explicação e uma revisão à empresa."
+    };
+    if(state.issue==="energia" && energyBillIntros[state.triage]){
+      c={...c,intro:energyBillIntros[state.triage],note:"Não forneça CPF, senha ou dados bancários por mensagens de desconhecidos. Use apenas os canais oficiais da distribuidora. O procedimento e os prazos dependem do caso; confirme com a empresa e consulte a ANEEL."};
+    }
+    if(state.issue==="transporte"&&state.triage==="federal")c={...c,links:[["ANTT — portal oficial","https://www.gov.br/antt/pt-br","Confira os canais de atendimento para viagens interestaduais."]]};
+
+    if(state.issue==="animais") {
+      const animalResults = {
+        "animal-domestico": {title:"Animal doméstico abandonado ou possível maus-tratos", intro:"Comece pelos canais municipais de proteção animal. Se houver suspeita de crueldade, a denúncia também pode ser feita à polícia. Não se coloque em risco para recolher provas.", steps:["Se for seguro, anote o local aproximado e o que observou. Fotos ou vídeos podem ajudar, mas não invada propriedades nem se aproxime de um animal agressivo.","Procure no site oficial da prefeitura por bem-estar animal, proteção animal ou zoonoses. Explique a situação e pergunte qual equipe recebe pedidos de resgate ou denúncias.","Se suspeitar de maus-tratos, registre a denúncia à Polícia Civil ou à Polícia Militar conforme a urgência e as orientações locais. Informe fatos observados, data e local aproximado.","Peça protocolo ou número de registro e guarde as informações. Se o órgão disser que não atende esse tipo de caso, peça indicação do setor responsável."], note:"Não existe um único serviço municipal igual em todas as cidades. Zoonoses nem sempre faz resgate de animais abandonados; confirme a competência local."},
+        "animal-silvestre": {title:"Animal silvestre encontrado", intro:"Animais silvestres podem se machucar ou reagir por medo. O mais seguro é não tocar nem tentar transportar o animal.", steps:["Mantenha pessoas e animais domésticos afastados sem encurralar o animal.","Procure o setor de meio ambiente da prefeitura, a Polícia Ambiental ou um serviço oficial de resgate de fauna do seu estado.","Informe a espécie se souber, o local aproximado e se o animal parece ferido, preso ou em perigo. Não tente identificá-lo de perto.","Se for morcego, não toque mesmo que pareça morto ou esteja no chão. Se alguém teve contato, procure atendimento de saúde prontamente."], note:"O órgão e o procedimento variam conforme a cidade e o estado. Não leve o animal para casa nem o transporte por conta própria."},
+        "animal-perigoso": {title:"Animal peçonhento ou potencialmente perigoso por perto", intro:"A prioridade é evitar aproximação e impedir que outras pessoas cheguem perto. Não tente capturar ou matar o animal.", steps:["Afaste-se devagar e mantenha crianças e animais domésticos longe da área, sem tentar encurralar o animal.","Se houver risco imediato para pessoas, procure o Corpo de Bombeiros (193) ou o serviço de emergência competente na sua região.","Para retirada ou orientação sem risco imediato, consulte a prefeitura e pergunte pelo serviço de zoonoses, meio ambiente ou controle de animais — a atribuição varia por município.","Se ocorrer picada ou mordida, procure atendimento médico imediatamente e siga as orientações oficiais para acidentes com animais peçonhentos."], note:"Não manipule o animal, não aplique receitas caseiras e não tente transportar o animal para um posto de saúde."},
+        "animal-acidente": {title:"Mordida, picada ou contato com animal: cuide da saúde primeiro", intro:"Não espere uma denúncia ou o resgate para buscar orientação de saúde. A urgência depende do animal, do local da lesão e dos sintomas.", steps:["Se houver falta de ar, desmaio, inchaço intenso, sangramento importante ou piora rápida, ligue para o SAMU (192) ou vá a um serviço de emergência.","Em ferida por mordida ou arranhão, lave com água corrente e sabão. Procure atendimento de saúde sem demora para avaliar a necessidade de prevenção contra raiva, tétano ou outras medidas.","Se suspeitar de cobra, escorpião, aranha ou outro animal peçonhento, mantenha a pessoa em repouso e procure atendimento imediatamente. Não faça torniquete, não corte a ferida e não tente sugar o veneno.","Se possível, observe o animal à distância para descrevê-lo, mas não tente capturá-lo nem se aproxime para tirar foto.","O Disque-Intoxicação (0800 722 6001) pode orientar sobre exposição tóxica, mas não substitui o atendimento médico de emergência."], note:"Contato com morcego ou animal silvestre deve ser avaliado rapidamente por um serviço de saúde, mesmo que a lesão pareça pequena."},
+        "animal-outro": {title:"Vamos identificar o órgão responsável pelo caso com animal", intro:"O caminho muda conforme o animal, o risco e o tipo de ajuda necessária.", steps:["Descreva em uma frase o que aconteceu e se há risco imediato para alguém.","Não toque nem tente capturar animais silvestres ou peçonhentos.","Consulte a prefeitura e procure bem-estar animal, meio ambiente ou zoonoses, conforme o caso.","Se houver suspeita de maus-tratos ou crime contra a fauna, procure orientação da Polícia Civil ou da Polícia Ambiental.","Guarde o protocolo e peça ao órgão que indique o setor responsável caso ele não atenda a ocorrência."], note:"Os serviços variam por localidade. Zoonoses nem sempre faz resgate de animais abandonados; confirme a competência local."},
+        "ambiente-lixo": {title:"Descarte irregular de lixo, entulho ou resíduos", intro:"O primeiro caminho costuma ser a prefeitura, limpeza urbana ou fiscalização ambiental municipal. Se houver resíduos perigosos, não toque nem tente removê-los.", steps:["Se for seguro, registre o que observou e o local aproximado. Não entre em terreno privado nem mexa nos resíduos.","Procure no site oficial da prefeitura por limpeza urbana, coleta de resíduos, fiscalização ou meio ambiente.","Informe o tipo de descarte e o local aproximado. Peça um protocolo e guarde o número.","Se parecer envolver resíduo químico, óleo, material hospitalar ou risco imediato, informe isso claramente e mantenha distância.","Se não houver resposta, procure a ouvidoria municipal ou o órgão ambiental estadual e pergunte quem tem competência para fiscalizar o caso."], note:"A competência pode variar entre prefeitura e órgão ambiental estadual. Não toque em materiais desconhecidos."},
+        "ambiente-poluicao": {title:"Suspeita de poluição do ar, da água ou do solo", intro:"Fumaça intensa, despejo de substâncias, água aparentemente contaminada ou mau cheiro persistente podem precisar de avaliação ambiental e, em alguns casos, de atendimento de emergência.", steps:["Se houver fogo, fumaça intensa, dificuldade para respirar ou risco imediato, afaste-se e procure o serviço de emergência adequado.","Não toque nem prove água ou substâncias suspeitas e evite se aproximar da fonte da poluição.","Anote o que observou, quando aconteceu e o local aproximado. Registre imagens somente se for seguro.","Procure a secretaria municipal de meio ambiente ou a fiscalização ambiental da prefeitura. Dependendo do caso, o órgão estadual pode ser responsável.","Peça protocolo e, se o órgão não for responsável, solicite que indique o canal correto."], note:"Não é possível identificar a substância ou confirmar contaminação apenas pela aparência. Evite contato e siga orientações das autoridades."},
+        "ambiente-queimada": {title:"Queimada, fumaça ou incêndio em vegetação", intro:"Se há fogo ativo ou risco de propagação, a prioridade é a segurança e o acionamento do serviço de emergência, não uma denúncia pela internet.", steps:["Não se aproxime do fogo nem tente apagá-lo se houver risco. Afaste pessoas e animais da área.","Em incêndio ativo ou perigo imediato, ligue para o Corpo de Bombeiros pelo 193, onde disponível.","Se não houver emergência ativa, registre a localização aproximada e o que observou, apenas se for seguro.","Para denúncia ou fiscalização ambiental, procure o órgão ambiental municipal ou estadual e a Polícia Ambiental, conforme a região.","Peça um número de protocolo ou registro da denúncia."], note:"Não coloque sua segurança em risco para conseguir fotos ou provas. Para fogo ativo, priorize a emergência."},
+        "ambiente-arvore": {title:"Árvore com risco, poda ou corte suspeito", intro:"Árvores em área pública, dentro de imóveis particulares e em áreas protegidas podem ter responsáveis diferentes. O órgão local deve orientar qual autorização ou atendimento se aplica.", steps:["Se houver risco imediato de queda sobre pessoas, casas ou fios, mantenha distância e avise a prefeitura ou o serviço de emergência competente.","Se for seguro, anote o local aproximado e descreva o problema: risco de queda, poda ou possível corte irregular.","Procure no site oficial da prefeitura por arborização urbana, parques e jardins ou fiscalização ambiental.","Se o caso envolver área protegida ou suspeita de crime ambiental, pergunte ao órgão municipal qual órgão ambiental estadual ou Polícia Ambiental deve receber a informação.","Peça protocolo e guarde a orientação recebida."], note:"Não corte nem pode a árvore por conta própria sem confirmar as regras e autorizações locais."},
+        "ambiente-fauna": {title:"Suspeita de caça, captura ou comércio ilegal de animais silvestres", intro:"A captura, o transporte e o comércio de fauna silvestre podem envolver fiscalização ambiental. Não confronte a pessoa suspeita nem tente resgatar o animal por conta própria.", steps:["Não compre, transporte ou tente retirar o animal. Evite confronto com a pessoa envolvida.","Se for seguro, anote informações observadas, data e local aproximado. Não invada propriedade nem se coloque em risco para conseguir provas.","Procure a Polícia Ambiental ou o órgão ambiental do estado; a prefeitura pode indicar o canal regional correto.","Se houver animal ferido ou em perigo, informe isso ao canal de fiscalização e pergunte qual serviço oficial de resgate atende a região.","Guarde o protocolo ou número de registro da denúncia."], note:"A atuação e os canais de denúncia variam por estado. Use apenas contatos encontrados em páginas oficiais."},
+        "ambiente-outro": {title:"Vamos identificar o órgão ambiental responsável", intro:"Problemas ambientais podem ser de responsabilidade municipal, estadual ou federal, dependendo do local e do que aconteceu.", steps:["Descreva o problema em uma frase e identifique se existe perigo imediato para pessoas, animais ou o ambiente.","Não toque em resíduos, substâncias desconhecidas, animais silvestres ou peçonhentos.","Comece pelo site oficial da prefeitura e procure meio ambiente ou fiscalização ambiental.","Se o problema ocorrer em área protegida, envolver fauna silvestre ou não for atendido pelo município, peça orientação sobre o órgão ambiental estadual ou federal competente.","Registre o protocolo e peça indicação formal do setor responsável caso o primeiro canal não seja o correto."], note:"Este guia não determina automaticamente a competência ambiental local. Confirme com o órgão público e guarde o protocolo."}
+      };
+      const selectedAnimal=animalResults[state.triage] || animalResults["ambiente-outro"];
+      const detailedSteps=animalExtraSteps[state.triage+":"+state.animalDetail]||[];
+      if(detailedSteps.length){selectedAnimal.steps=[...detailedSteps,...selectedAnimal.steps];}
+      const detailInfo=animalDetailChoices[state.triage];
+      if(detailInfo){const selected=detailInfo[1].find(x=>x[0]===state.animalDetail);if(selected)selectedAnimal.intro="Situação identificada: "+selected[1]+". "+selectedAnimal.intro;}
+      const linksPrefeitura = [
+        ["Encontrar o canal oficial da prefeitura da minha cidade", `LOCAL_PREFEITURA`, "A busca usa sua cidade e estado. Confira se o resultado é o portal oficial antes de enviar dados."]
+      ];
+      const linksAmbienteEstadual = [
+        ["Encontrar órgão ambiental / Polícia Ambiental do estado", `LOCAL_AMBIENTE`, "Confira o portal oficial do estado e escolha o canal de denúncia ou fiscalização adequado."],
+        ["IBAMA — canais de atendimento e denúncias ambientais", "https://www.gov.br/ibama/pt-br/canais_atendimento", "Canal federal; nem toda ocorrência local é de competência do IBAMA."]
+      ];
+      const linksAnimais = [
+        ["Encontrar serviço municipal de proteção animal / zoonoses", `LOCAL_PREFEITURA`, "A prefeitura pode informar se o atendimento é feito por proteção animal, zoonoses ou outro setor. Zoonoses nem sempre realiza resgate."],
+        ...linksAmbienteEstadual
+      ];
+      const linksSaudeAnimal = [
+        ["Ministério da Saúde — animais peçonhentos", "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/a/animais-peconhentos", "Orientações oficiais sobre prevenção e atendimento após picadas ou contato com animais peçonhentos."],
+        ["Ministério da Saúde — raiva e exposição a animais", "https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/r/raiva/raiva/", "Orientações sobre mordidas, arranhões e contato com animais que possam transmitir raiva."],
+        ["Anvisa — Disque-Intoxicação: 0800 722 6001", "https://www.gov.br/anvisa/pt-br/assuntos/agrotoxicos/disque-intoxicacao", "Orientação toxicológica; não substitui atendimento médico de emergência."]
+      ];
+      let localLinks;
+      if(state.triage === "animal-acidente") localLinks = [...linksSaudeAnimal, ...linksAnimais];
+      else if(state.triage === "animal-perigoso") localLinks = [...linksAnimais, ...linksSaudeAnimal.slice(0,1)];
+      else if(state.triage === "animal-silvestre" || state.triage === "ambiente-fauna") localLinks = linksAmbienteEstadual.concat(linksPrefeitura);
+      else if(state.triage === "ambiente-lixo" || state.triage === "ambiente-poluicao" || state.triage === "ambiente-queimada" || state.triage === "ambiente-arvore" || state.triage === "ambiente-outro") localLinks = [...linksPrefeitura, ...linksAmbienteEstadual];
+      else localLinks = [...linksAnimais, ...linksAmbienteEstadual];
+      c={icon:"🐾", title:selectedAnimal.title, intro:selectedAnimal.intro, steps:selectedAnimal.steps, links:localLinks, note:selectedAnimal.note};
+    }
+    if(state.issue==="outro") {
+      if(state.triage==="publico") c=configs.cidade;
+      else if(state.triage==="cobranca") c=configs.consumo;
+      else if(state.triage==="hibrido") c={
+        icon:"🧭",title:"Seu problema envolve mais de um assunto",intro:"Quando duas coisas acontecem juntas, pode haver mais de um responsável. Vamos separar cada parte para você não ficar sendo encaminhado de um lugar para outro.",
+        steps:[
+          "Se houver perigo imediato — como fio caído, risco de desabamento, alagamento perigoso ou alguém passando mal — afaste-se e procure o serviço de emergência adequado. Não espere uma reclamação online.",
+          "Divida o problema em partes. Por exemplo: 'a água acabou' é uma questão; 'a rua alagou' pode ser outra. Anote cada situação separadamente.",
+          "Para cada parte, anote quem parece prestar o serviço: veja a conta, o contrato, a placa, o nome da empresa ou pergunte à prefeitura. Se não souber, não chute: peça que informem quem é responsável.",
+          "Entre em contato com cada empresa ou órgão responsável por uma parte do problema. Explique só aquela parte e peça um número de protocolo para cada atendimento.",
+          "Se um órgão disser que não é responsável, peça que informe qual órgão é e, se possível, que registre essa orientação. Guarde os protocolos e procure a ouvidoria do responsável quando o atendimento inicial não resolver."
+        ],
+        links:[["Buscar o site oficial da prefeitura da minha cidade","https://www.google.com/search?q=site%3Agov.br+prefeitura+","Para problemas em ruas, bairros ou serviços municipais; confira o nome da cidade e o domínio oficial."],["Consumidor.gov.br — verificar empresa","https://www.consumidor.gov.br/","Para a parte do problema que envolve uma empresa participante da plataforma."],["Fala.BR — ouvidoria federal","https://falabr.cgu.gov.br/","Use apenas se a parte do problema envolver órgão ou entidade atendida por esse sistema."]],
+        note:"Nem sempre existe um único órgão que resolva tudo. Este guia não confirma automaticamente a responsabilidade local. Peça que cada serviço informe o setor responsável e guarde os protocolos."
+      };
+      else if(state.triage==="sem-solucao") c={
+        icon:"🗂️",title:"Você já tentou resolver e continua sem resposta",intro:"Vamos organizar o que você já fez e identificar o próximo passo. O canal certo depende do serviço e de quem é responsável por ele.",
+        steps:[
+          "Procure o número do protocolo da primeira reclamação. Ele pode estar em SMS, e-mail, aplicativo, papel ou no histórico de chamadas. Se não encontrar, peça à empresa uma cópia ou o número do atendimento.",
+          "Anote a data em que reclamou, o que pediu e qual resposta recebeu. Guarde contas, fotos, contratos e mensagens relacionadas ao problema.",
+          "Se reclamou apenas no atendimento comum, procure a ouvidoria da mesma empresa ou órgão. Diga que já tentou resolver e informe o protocolo anterior.",
+          "Se a ouvidoria não resolver, procure o órgão que fiscaliza aquele serviço. Por exemplo, a ANATEL trata de telecomunicações, a ANEEL de energia elétrica e a ANS de planos de saúde. Outros serviços podem ter responsáveis locais.",
+          "Se não souber qual órgão fiscaliza o serviço, pergunte por escrito à empresa ou à prefeitura: 'Qual é o órgão responsável por receber reclamações sobre este serviço?'. Não envie dados pessoais a páginas que não confirmou como oficiais."
+        ],
+        links:[["Consumidor.gov.br — verificar empresa","https://www.consumidor.gov.br/","Pode ser uma opção para problemas com empresas cadastradas."],["Buscar o Procon oficial da minha cidade ou estado","https://www.google.com/search?q=site%3Agov.br+Procon+","Complete a busca com sua cidade e estado e confira se o resultado é oficial."],["Fala.BR — ouvidoria federal","https://falabr.cgu.gov.br/","Para órgãos e entidades federais que usam esse sistema; não substitui toda ouvidoria local."]],
+        note:"Não existe um único canal de reclamação para todos os problemas. O próximo passo depende do serviço, da empresa e do órgão responsável."
+      };
+      else if(state.triage==="identificar") c=configs.outro;
+    }
+    const city=$("city").value.trim(), uf=$("state").value;
+    const locationText=[city,uf].filter(Boolean).join(" — ");
+    const urgent=$("urgent").checked;
+    const tried=$("tried").checked;
+    let stepsText=c.steps.slice();
+    const localSearch = encodeURIComponent(`${city} ${uf}`);
+    // Canais verificados: para outras cidades, mostramos claramente a limitação.
+    const cityKey=city.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
+    const municipal = uf==="SP" && cityKey==="sumare" ? {
+      portal:"https://www.sumare.sp.gov.br/autoatendimento/",
+      contact:"https://www.sumare.sp.gov.br/cidadao/pagina/telefones-uteis",
+      name:"Sumaré — Prefeitura e contatos oficiais",
+      help:"O portal municipal informa canais como 156 para iluminação pública e denúncias ambientais, e ouvidoria municipal. Confira a atribuição do serviço."
+    } : uf==="SP" && cityKey==="campinas" ? {
+      portal:"https://portal-adm.campinas.sp.gov.br/servico/156-solicitar-informacoesservicos-publicos",
+      contact:"https://portal-adm.campinas.sp.gov.br/node/133543",
+      name:"Campinas — serviço municipal 156",
+      help:"Serviço municipal de solicitações. Para manifestações sobre o atendimento, consulte a Ouvidoria de Campinas."
+    } : null;
+    const municipalIssue = ["agua","transporte","cidade","animais","outro"].includes(state.issue);
+    if(municipal && municipalIssue){
+      c={...c,links:[...c.links,[municipal.name,municipal.portal,municipal.help],["Ouvidoria e contatos municipais verificados",municipal.contact,"Confira o canal adequado para sua situação e guarde o protocolo."]]};
+    }
+    if(uf==="SP" && (state.issue==="consumo" || (state.issue==="outro" && ["cobranca","sem-solucao"].includes(state.triage)))){
+      c={...c,links:[...c.links,["Procon-SP Digital — atendimento oficial","https://consumidor2.procon.sp.gov.br/login","Serviço estadual de atendimento ao consumidor; confira requisitos de acesso."]]};
+    }
+    const links=c.links.map(([title,url,desc])=>{
+      let finalUrl=url;
+      if(url.includes("google.com/search?q=site%3Agov.br+prefeitura+")) finalUrl=`https://www.google.com/search?q=${encodeURIComponent('site:gov.br prefeitura ' + city + ' ' + uf)}`;
+      if(url === "LOCAL_PREFEITURA") finalUrl=`https://www.google.com/search?q=${encodeURIComponent('site:gov.br prefeitura meio ambiente proteção animal ' + city + ' ' + uf)}`;
+      if(url === "LOCAL_AMBIENTE") finalUrl=`https://www.google.com/search?q=${encodeURIComponent('site:gov.br órgão ambiental Polícia Ambiental ' + uf)}`;
+      if(url.includes("google.com/search?q=site%3Agov.br+Procon+")) finalUrl=`https://www.google.com/search?q=${encodeURIComponent('site:gov.br Procon ' + city + ' ' + uf)}`;
+      if(municipal && (url==="LOCAL_PREFEITURA" || url.includes("google.com/search?q=site%3Agov.br+prefeitura+"))){finalUrl=municipal.portal;title="Abrir portal oficial da Prefeitura — "+city;desc=municipal.help;}
+      else if(!municipal && (url==="LOCAL_PREFEITURA" || url.includes("google.com/search?q=site%3Agov.br+prefeitura+"))){title="Pesquisar prefeitura (órgão local ainda não verificado)";desc="Esta é uma busca, não um atendimento oficial confirmado. Confira o domínio e a competência antes de informar dados.";}
+      if(url==="LOCAL_AMBIENTE"){title="Pesquisar órgão ambiental estadual (não verificado para esta localidade)";desc="A busca não confirma a competência do órgão. Verifique o portal oficial do estado.";}
+      return `<a class="official-link" href="${finalUrl}" target="_blank" rel="noopener noreferrer"><span>${title}<span>${desc||"Abra o canal indicado e siga as instruções da página."}</span></span><b aria-hidden="true">↗</b></a>`;
+    }).join("");
+    const isAnimalEnvironment = state.issue === "animais";
+    const triedText=tried
+      ? `<div class="result-help"><strong>Você já procurou ajuda.</strong><p>Guarde o número de protocolo ou registro, a data, o canal usado e a resposta recebida. Se não recebeu número, peça o registro do atendimento. Se o órgão disser que não é responsável, peça o nome do setor correto e, se possível, essa orientação por escrito.</p></div>`
+      : `<div class="result-help"><strong>Se você ainda não fez a solicitação ou denúncia</strong><p>${isAnimalEnvironment ? "Use o canal público indicado abaixo. Relate apenas o que observou, o local aproximado e se existe risco imediato. Não confronte suspeitos, não entre em propriedade privada e não manipule animais ou resíduos." : "Comece pelo canal oficial indicado para seu tipo de problema. Explique o que aconteceu, peça que registrem a solicitação e guarde o número de protocolo."}</p></div>`;
+    const urgentText=urgent?`<div class="notice"><strong>Você marcou que existe perigo agora.</strong> Não espere o site ou uma reclamação. Afaste-se do perigo e procure o serviço de emergência adequado. Se alguém estiver passando mal, procure atendimento de saúde imediatamente.</div>`:"";
+    const verifiedNote=municipal ? `<div class="result-help"><strong>Canal municipal identificado</strong><p>Encontramos uma fonte oficial para ${escapeHtml(city)}. O órgão exato ainda depende do tipo de serviço; confira as instruções do portal.</p></div>` : `<div class="result-help"><strong>Atenção: canal municipal não verificado</strong><p>Para ${escapeHtml(city)} — ${escapeHtml(uf)}, ainda não temos um canal municipal cadastrado e verificado. Os links de pesquisa não são, por si só, canais oficiais de atendimento. Confira o domínio e a competência antes de fornecer dados.</p></div>`;
+    const locationNote=`<p><strong>Você informou:</strong> ${escapeHtml(locationText)}. Isso ajuda a procurar o canal local. Em alguns assuntos, o site não consegue confirmar sozinho qual órgão é responsável; por isso, confira a cidade e o nome do órgão antes de enviar dados.</p>`;
+    const triageNote=(state.issue==="outro" || state.issue==="animais")?`<div class="result-help"><strong>Como você descreveu o problema</strong><p>${escapeHtml(({hibrido:"O problema envolve mais de um serviço ou situação.",publico:"O problema aconteceu na rua, no bairro ou em um espaço público.",cobranca:"O problema envolve cobrança, compra, contrato ou prejuízo.","sem-solucao":"Você já procurou ajuda e ainda não conseguiu resolver.",identificar:"Você não conseguiu encaixar o problema nas outras opções.","animal-domestico":"Animal doméstico abandonado ou suspeita de maus-tratos.","animal-silvestre":"Animal silvestre encontrado.","animal-perigoso":"Animal peçonhento ou potencialmente perigoso por perto.","animal-acidente":"Mordida, picada ou contato com animal.","animal-outro":"Outro problema envolvendo animais.","ambiente-lixo":"Descarte irregular de lixo, entulho ou resíduos.","ambiente-poluicao":"Suspeita de poluição do ar, da água ou do solo.","ambiente-queimada":"Queimada, fumaça ou incêndio em vegetação.","ambiente-arvore":"Árvore, poda ou corte irregular.","ambiente-fauna":"Suspeita de caça, captura ou comércio ilegal de animais silvestres.","ambiente-outro":"Outro problema ambiental."})[state.triage]||"Vamos identificar por onde começar.")}</p>${triageDescription?`<p><strong>O que você contou:</strong> ${escapeHtml(triageDescription)}</p>`:""}</div>`:"";
+    const simpleSteps=stepsText.map((text,i)=>`<li><div class="plain-step"><strong>Passo ${i+1}</strong><p>${text}</p></div></li>`).join("");
+    $("result-content").innerHTML=`
+      <div class="result">
+        <div class="result-head"><div class="result-icon" aria-hidden="true">${c.icon}</div><div><h3>${c.title}</h3><p>${c.intro}</p></div></div>
+        ${locationNote}
+        ${verifiedNote}
+        ${triageNote}
+        ${triedText}
+        <h4>O que fazer agora — siga estas orientações</h4><ol class="steps-list">${simpleSteps}</ol>
+        <h4>Onde tocar para continuar</h4><p>Os botões abaixo abrem outros sites. Quando abrir uma página, leia o título e confira se é o órgão indicado. Alguns serviços pedem cadastro ou login.</p><div class="links">${links}</div>
+        <div class="notice"><strong>Importante:</strong> ${c.note}</div>
+        ${urgentText}
+        ${renderProfessionalHelp()}
+        <div class="follow-up"><h4>Não consegui resolver. E agora?</h4><label for="follow-status">O que aconteceu depois que você pediu ajuda?</label><select id="follow-status"><option value="">Selecione uma resposta</option><option value="resolved">O problema foi resolvido</option><option value="waiting">Ainda estou aguardando</option><option value="unresolved">Não resolveram</option><option value="redirect">Disseram que não são responsáveis</option></select><p id="follow-advice" aria-live="polite">Selecione uma resposta para saber como continuar.</p></div>
+      </div>
+      <div class="result-actions"><button class="btn btn-primary" type="button" id="print-result">Imprimir / salvar PDF</button><button class="btn btn-secondary" type="button" id="copy-result">Copiar orientações</button><button class="btn btn-secondary" type="button" id="restart">Começar de novo</button></div>
+      <p class="tiny" style="margin-top:14px">Orientação geral para ${issueNames[state.issue]||"seu problema"}. Este site não envia reclamações, não é órgão público e não substitui os canais oficiais. Se precisar, peça ajuda a uma pessoa de confiança para abrir os links.</p>`;
+    $("print-result").addEventListener("click",()=>window.print());
+    $("copy-result").addEventListener("click",async()=>{
+      const content=$("result-content").innerText;
+      try{await navigator.clipboard.writeText(content);$("copy-result").textContent="Copiado ✓";}
+      catch(e){const el=document.createElement("textarea");el.value=content;document.body.appendChild(el);el.select();const ok=document.execCommand("copy");el.remove();$("copy-result").textContent=ok?"Copiado ✓":"Não foi possível copiar";}
+    });
+    $("follow-status").addEventListener("change",()=>{
+      const route={
+        energia:{name:"ANEEL",url:"https://www.gov.br/aneel/pt-br/canais_atendimento/reclame-da-distribuidora"},
+        telecom:{name:"Anatel Consumidor",url:"https://apps.anatel.gov.br/AnatelConsumidor/"},
+        saude:{name:"ANS",url:"https://www.gov.br/ans/pt-br/canais_atendimento/canais-de-atendimento-ao-consumidor-1"},
+        consumo:{name:uf==="SP"?"Procon-SP Digital":"Procon do seu estado",url:uf==="SP"?"https://consumidor2.procon.sp.gov.br/login":null},
+        cidade:{name:"Ouvidoria municipal",url:municipal?.contact||null},
+        animais:{name:"Ouvidoria ou órgão ambiental competente",url:municipal?.contact||null},
+        agua:{name:"Ouvidoria da prestadora e regulador local",url:null},
+        transporte:{name:state.triage==="federal"?"ANTT":"Órgão responsável pelo transporte local ou estadual",url:state.triage==="federal"?"https://www.gov.br/antt/pt-br":municipal?.contact||null}
+      }[state.issue] || {name:"Ouvidoria do órgão responsável",url:null};
+      const link=route.url?` <a href="${route.url}" target="_blank" rel="noopener noreferrer">Abrir ${route.name}</a>.`:" Confirme o canal no portal oficial antes de enviar informações.";
+      const advice={
+        resolved:"Guarde a resposta, o protocolo e os comprovantes para consulta futura.",
+        waiting:"Consulte o prazo aplicável informado no protocolo e acompanhe a solicitação pelo canal oficial. Se o prazo terminar sem resposta, procure a ouvidoria do responsável.",
+        unresolved:"Se ainda não passou pela ouvidoria, procure-a com o protocolo. Se já tentou, verifique o próximo canal: "+route.name+"."+link,
+        redirect:"Peça ao órgão uma indicação do setor competente, de preferência por escrito. Registre o encaminhamento e guarde o protocolo. Para seu caso, consulte: "+route.name+"."+link
+      };
+      $("follow-advice").innerHTML=advice[$("follow-status").value]||"Selecione uma resposta para saber como continuar.";
+    });
+    $("restart").addEventListener("click",()=>{
+      state.issue=null; state.triage=null; state.animalDetail=null;
+      $("specific-panel").classList.add("hidden");$("specific-options").innerHTML="";$("early-danger").classList.add("hidden");
+      document.querySelectorAll("[data-issue]").forEach(b=>b.setAttribute("aria-pressed","false"));
+      document.querySelectorAll('input[name="other-triage"], input[name="environment-triage"]').forEach(r=>r.checked=false);
+      $("triage-panel").classList.add("hidden"); $("triage-options").classList.remove("hidden"); $("animal-options").classList.add("hidden"); $("animal-detail-panel").classList.add("hidden"); $("animal-detail-options").innerHTML=""; $("problem-description").value="";
+      $("state").value=""; $("city").value=""; $("tried").checked=false; $("urgent").checked=false;
+      $("err1").classList.add("hidden"); $("err2").classList.add("hidden");
+      showStep(1); $("encontrar").scrollIntoView({behavior:"smooth"});
+    });
+  }
+  function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+  let fontSize=16;
+  $("font-up").addEventListener("click",()=>{fontSize=Math.min(22,fontSize+1);document.body.style.fontSize=fontSize+"px";});
+  $("font-down").addEventListener("click",()=>{fontSize=Math.max(14,fontSize-1);document.body.style.fontSize=fontSize+"px";});
+  $("urgent").addEventListener("change",()=>$("early-danger").classList.toggle("hidden",!$("urgent").checked));
+  $("year").textContent=new Date().getFullYear();
+  showStep(1);
+})();
+</script>
+</body>
+</html>
